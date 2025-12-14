@@ -700,3 +700,110 @@ img {
     width: 100%;
   }
 }
+
+/* ========================================
+   Coordinator Section Styling
+   ======================================== */
+
+/* Ensures the section stands out slightly from the background */
+.coordinator-section {
+  background-color: var(--background);
+  /* #F5F7FA */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.coordinator-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--cards);
+  /* #FFFFFF */
+  border-radius: var(--radius-md);
+  /* 16px */
+  box-shadow: 0 8px 25px rgba(26, 26, 26, 0.1);
+  /* Light shadow */
+  padding: 30px;
+  gap: 30px;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+}
+
+/* Styling for the image part */
+.coordinator-image-container {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--primary);
+  /* Use Primary color for distinction */
+}
+
+.coordinator-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling for the text/info part */
+.coordinator-info {
+  flex-grow: 1;
+}
+
+.coordinator-info h3 {
+  font-family: var(--font-heading);
+  /* Headings font */
+  color: var(--dark-text);
+  /* #1A1A1A */
+  margin-bottom: 5px;
+}
+
+.coordinator-info .role-title {
+  font-family: var(--font-body);
+  /* Body font */
+  color: var(--secondary);
+  /* #00D4FF */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Styling for the quote/message */
+.coordinator-quote {
+  font-family: var(--font-body);
+  /* Body font */
+  font-style: italic;
+  color: var(--dark-text);
+  border-left: 4px solid var(--accent);
+  /* #6A00FF for emphasis */
+  padding-left: 20px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Mobile (<600px) */
+@media (max-width: 600px) {
+  .coordinator-card {
+    flex-direction: column;
+    /* Stack image and info vertically */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .coordinator-image-container {
+    margin-bottom: 15px;
+  }
+
+  .coordinator-quote {
+    border-left: none;
+    border-top: 1px solid var(--accent);
+    padding: 15px 0 0 0;
+  }
+}
