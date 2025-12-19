@@ -6,481 +6,500 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="MTC Resources - Learning materials, tutorials, and useful links for mathematics and technology">
-    <title>Resources - MTC</title>
+    <title>Resources - KMTC</title>
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span>MTC</span>
-            </a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="team.html" class="nav-link">Team</a></li>
-                <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="resources.html" class="nav-link active">Resources</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="hero" style="min-height: 50vh;">
-        <div class="hero-content fade-in-up">
-            <h1 class="hero-title">Resources</h1>
-            <p class="hero-subtitle">
-                Curated learning materials, tutorials, and tools to help you excel in mathematics and technology.
-            </p>
-        </div>
-    </section>
-
-    <!-- Learning Materials Section -->
-    <section class="section scroll-reveal">
-        <h2 class="section-title">📚 Learning Materials</h2>
-
-        <div class="grid grid-2">
-            <!-- Mathematics Resources -->
-            <div class="card">
-                <h3
-                    style="color: var(--primary); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <span style="font-size: 2rem;">🧮</span> Mathematics
-                </h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li
-                        style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <strong>Calculus Fundamentals</strong>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Complete guide to
-                                differential and integral calculus</p>
-                        </div>
-                        <span
-                            style="background: #E3F2FD; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
-                    </li>
-                    <li
-                        style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <strong>Linear Algebra Notes</strong>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Matrices, vectors, and
-                                transformations explained</p>
-                        </div>
-                        <span
-                            style="background: #E3F2FD; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
-                    </li>
-                    <li
-                        style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <strong>Statistics & Probability</strong>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">From basic concepts to
-                                advanced distributions</p>
-                        </div>
-                        <span
-                            style="background: #E3F2FD; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
-                    </li>
-                    <li style="padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <strong>Olympiad Problem Sets</strong>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Practice problems with
-                                detailed solutions</p>
-                        </div>
-                        <span
-                            style="background: #E3F2FD; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><a href="index.html">
+                        <img src="static/images/images/img/YJ---LOGO.png" height="50px" width="50px" alt="Logo">
+                        <span class="nav-logo">MTC</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="team.html" class="nav-link">Team</a></li>
+                        <li><a href="events.html" class="nav-link">Events</a></li>
+                        <li><a href="resources.html" class="nav-link active">Resources</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
+        </nav>
+    </header>
 
-            <!-- Programming Resources -->
-            <div class="card">
-                <h3
-                    style="color: var(--secondary); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <span style="font-size: 2rem;">💻</span> Programming
-                </h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li
-                        style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <strong>Python Beginner's Guide</strong>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Learn Python from scratch
-                                with examples</p>
-                        </div>
-                        <span
-                            style="background: #E0F7FA; color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
-                    </li>
-                    <li
-                        style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <strong>Web Development Basics</strong>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">HTML, CSS, and JavaScript
-                                essentials</p>
-                        </div>
-                        <span
-                            style="background: #E0F7FA; color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
-                    </li>
-                    <li
-                        style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <strong>Data Structures & Algorithms</strong>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Essential CS concepts with
-                                implementations</p>
-                        </div>
-                        <span
-                            style="background: #E0F7FA; color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
-                    </li>
-                    <li style="padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <strong>Git & GitHub Guide</strong>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Version control for
-                                collaborative projects</p>
-                        </div>
-                        <span
-                            style="background: #E0F7FA; color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
-                    </li>
-                </ul>
+    <main>
+
+        <!-- Page Header -->
+        <section class="hero" style="min-height: 50vh;">
+            <div class="hero-content fade-in-up">
+                <h1 class="hero-title">Resources</h1>
+                <p class="hero-subtitle">
+                    Curated learning materials, tutorials, and tools to help you excel in mathematics and technology.
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Video Tutorials Section -->
-    <div style="background-color: white; width: 100%;">
+        <!-- Learning Materials Section -->
         <section class="section scroll-reveal">
-            <h2 class="section-title">🎥 Video Tutorials</h2>
+            <h2 class="section-title">📚 Learning Materials</h2>
 
-            <div class="grid grid-3">
+            <div class="grid grid-2">
+                <!-- Mathematics Resources -->
                 <div class="card">
-                    <div
-                        style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(42, 77, 255, 0.2), rgba(0, 212, 255, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                        ▶️
-                    </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Introduction to Python</h4>
-                    <p class="card-description" style="font-size: 0.95rem;">
-                        Complete beginner series covering Python syntax, data types, and basic programming concepts.
-                    </p>
-                    <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">12 videos • 6 hours</p>
+                    <h3
+                        style="color: var(--primary); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 2rem;">🧮</span> Mathematics
+                    </h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>Calculus Fundamentals</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Complete guide to
+                                    differential and integral calculus</p>
+                            </div>
+                            <span
+                                style="background: #E3F2FD; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
+                        </li>
+                        <li
+                            style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>Linear Algebra Notes</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Matrices, vectors, and
+                                    transformations explained</p>
+                            </div>
+                            <span
+                                style="background: #E3F2FD; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
+                        </li>
+                        <li
+                            style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>Statistics & Probability</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">From basic concepts to
+                                    advanced distributions</p>
+                            </div>
+                            <span
+                                style="background: #E3F2FD; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
+                        </li>
+                        <li style="padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>Olympiad Problem Sets</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Practice problems with
+                                    detailed solutions</p>
+                            </div>
+                            <span
+                                style="background: #E3F2FD; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
+                        </li>
+                    </ul>
                 </div>
 
+                <!-- Programming Resources -->
                 <div class="card">
-                    <div
-                        style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(106, 0, 255, 0.2), rgba(42, 77, 255, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                        ▶️
-                    </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Calculus Made Easy</h4>
-                    <p class="card-description" style="font-size: 0.95rem;">
-                        Visual explanations of calculus concepts with real-world applications and problem-solving.
-                    </p>
-                    <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">15 videos • 8 hours</p>
-                </div>
-
-                <div class="card">
-                    <div
-                        style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(255, 142, 83, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                        ▶️
-                    </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Web Development Crash Course</h4>
-                    <p class="card-description" style="font-size: 0.95rem;">
-                        Build modern websites from scratch using HTML, CSS, and JavaScript with hands-on projects.
-                    </p>
-                    <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">20 videos • 10 hours</p>
-                </div>
-
-                <div class="card">
-                    <div
-                        style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(78, 205, 196, 0.2), rgba(68, 160, 141, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                        ▶️
-                    </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Machine Learning Basics</h4>
-                    <p class="card-description" style="font-size: 0.95rem;">
-                        Introduction to ML algorithms, neural networks, and practical AI applications.
-                    </p>
-                    <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">18 videos • 9 hours</p>
-                </div>
-
-                <div class="card">
-                    <div
-                        style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(240, 147, 251, 0.2), rgba(245, 87, 108, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                        ▶️
-                    </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Data Structures Explained</h4>
-                    <p class="card-description" style="font-size: 0.95rem;">
-                        Comprehensive guide to arrays, linked lists, trees, graphs, and their implementations.
-                    </p>
-                    <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">16 videos • 7 hours</p>
-                </div>
-
-                <div class="card">
-                    <div
-                        style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(250, 112, 154, 0.2), rgba(254, 225, 64, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                        ▶️
-                    </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Problem Solving Strategies</h4>
-                    <p class="card-description" style="font-size: 0.95rem;">
-                        Techniques for tackling complex mathematical and programming problems effectively.
-                    </p>
-                    <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">10 videos • 5 hours</p>
+                    <h3
+                        style="color: var(--secondary); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 2rem;">💻</span> Programming
+                    </h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>Python Beginner's Guide</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Learn Python from
+                                    scratch
+                                    with examples</p>
+                            </div>
+                            <span
+                                style="background: #E0F7FA; color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
+                        </li>
+                        <li
+                            style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>Web Development Basics</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">HTML, CSS, and
+                                    JavaScript
+                                    essentials</p>
+                            </div>
+                            <span
+                                style="background: #E0F7FA; color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
+                        </li>
+                        <li
+                            style="padding: 1rem; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>Data Structures & Algorithms</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Essential CS concepts
+                                    with
+                                    implementations</p>
+                            </div>
+                            <span
+                                style="background: #E0F7FA; color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
+                        </li>
+                        <li style="padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>Git & GitHub Guide</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.25rem;">Version control for
+                                    collaborative projects</p>
+                            </div>
+                            <span
+                                style="background: #E0F7FA; color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem;">PDF</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-    </div>
 
-    <!-- Useful Links Section -->
-    <section class="section scroll-reveal">
-        <h2 class="section-title">🔗 Useful External Links</h2>
+        <!-- Video Tutorials Section -->
+        <div style="background-color: white; width: 100%;">
+            <section class="section scroll-reveal">
+                <h2 class="section-title">🎥 Video Tutorials</h2>
 
-        <div class="grid grid-3">
-            <div class="card">
-                <h4 style="color: var(--primary); margin-bottom: 1rem;">📖 Learning Platforms</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.khanacademy.org" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Khan Academy</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.coursera.org" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Coursera</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.edx.org" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>edX</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0;">
-                        <a href="https://www.udemy.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Udemy</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div
+                            style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(42, 77, 255, 0.2), rgba(0, 212, 255, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            ▶️
+                        </div>
+                        <h4 class="card-title" style="font-size: 1.1rem;">Introduction to Python</h4>
+                        <p class="card-description" style="font-size: 0.95rem;">
+                            Complete beginner series covering Python syntax, data types, and basic programming concepts.
+                        </p>
+                        <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">12 videos • 6 hours
+                        </p>
+                    </div>
 
-            <div class="card">
-                <h4 style="color: var(--secondary); margin-bottom: 1rem;">💻 Coding Practice</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://leetcode.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>LeetCode</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.hackerrank.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>HackerRank</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.codewars.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Codewars</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0;">
-                        <a href="https://www.codeforces.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Codeforces</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="card">
+                        <div
+                            style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(106, 0, 255, 0.2), rgba(42, 77, 255, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            ▶️
+                        </div>
+                        <h4 class="card-title" style="font-size: 1.1rem;">Calculus Made Easy</h4>
+                        <p class="card-description" style="font-size: 0.95rem;">
+                            Visual explanations of calculus concepts with real-world applications and problem-solving.
+                        </p>
+                        <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">15 videos • 8 hours
+                        </p>
+                    </div>
 
-            <div class="card">
-                <h4 style="color: var(--accent); margin-bottom: 1rem;">🧮 Math Resources</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.wolframalpha.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Wolfram Alpha</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://brilliant.org" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Brilliant</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.geogebra.org" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>GeoGebra</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0;">
-                        <a href="https://www.desmos.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Desmos</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="card">
+                        <div
+                            style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(255, 142, 83, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            ▶️
+                        </div>
+                        <h4 class="card-title" style="font-size: 1.1rem;">Web Development Crash Course</h4>
+                        <p class="card-description" style="font-size: 0.95rem;">
+                            Build modern websites from scratch using HTML, CSS, and JavaScript with hands-on projects.
+                        </p>
+                        <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">20 videos • 10 hours
+                        </p>
+                    </div>
 
-            <div class="card">
-                <h4 style="color: #FF6B6B; margin-bottom: 1rem;">📚 Documentation</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://developer.mozilla.org" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>MDN Web Docs</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://docs.python.org" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Python Docs</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.w3schools.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>W3Schools</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0;">
-                        <a href="https://stackoverflow.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Stack Overflow</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="card">
+                        <div
+                            style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(78, 205, 196, 0.2), rgba(68, 160, 141, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            ▶️
+                        </div>
+                        <h4 class="card-title" style="font-size: 1.1rem;">Machine Learning Basics</h4>
+                        <p class="card-description" style="font-size: 0.95rem;">
+                            Introduction to ML algorithms, neural networks, and practical AI applications.
+                        </p>
+                        <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">18 videos • 9 hours
+                        </p>
+                    </div>
 
-            <div class="card">
-                <h4 style="color: #4ECDC4; margin-bottom: 1rem;">🎨 Design Tools</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.figma.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Figma</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://www.canva.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Canva</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://color.adobe.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Adobe Color</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0;">
-                        <a href="https://fonts.google.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Google Fonts</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="card">
+                        <div
+                            style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(240, 147, 251, 0.2), rgba(245, 87, 108, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            ▶️
+                        </div>
+                        <h4 class="card-title" style="font-size: 1.1rem;">Data Structures Explained</h4>
+                        <p class="card-description" style="font-size: 0.95rem;">
+                            Comprehensive guide to arrays, linked lists, trees, graphs, and their implementations.
+                        </p>
+                        <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">16 videos • 7 hours
+                        </p>
+                    </div>
 
-            <div class="card">
-                <h4 style="color: #F093FB; margin-bottom: 1rem;">🛠️ Developer Tools</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://github.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>GitHub</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://code.visualstudio.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>VS Code</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
-                        <a href="https://replit.com" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>Replit</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                    <li style="padding: 0.5rem 0;">
-                        <a href="https://codesandbox.io" target="_blank"
-                            style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
-                            <span>CodeSandbox</span>
-                            <span style="font-size: 1.2rem;">→</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="card">
+                        <div
+                            style="width: 100%; height: 160px; background: linear-gradient(135deg, rgba(250, 112, 154, 0.2), rgba(254, 225, 64, 0.2)); border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            ▶️
+                        </div>
+                        <h4 class="card-title" style="font-size: 1.1rem;">Problem Solving Strategies</h4>
+                        <p class="card-description" style="font-size: 0.95rem;">
+                            Techniques for tackling complex mathematical and programming problems effectively.
+                        </p>
+                        <p style="color: var(--primary); font-size: 0.85rem; margin-top: 0.5rem;">10 videos • 5 hours
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <!-- CTA Section -->
-    <!-- Combined CTA Section -->
-    <section class="section scroll-reveal" style="margin-top: 2rem; margin-bottom: 2rem;">
-        <div
-            style="background: linear-gradient(135deg, rgba(42, 77, 255, 0.05), rgba(0, 212, 255, 0.05)); border-radius: 24px; padding: 4rem 2rem; position: relative; overflow: hidden;">
-            <!-- Decorative circle -->
+        <!-- Useful Links Section -->
+        <section class="section scroll-reveal">
+            <h2 class="section-title">🔗 Useful External Links</h2>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem;">📖 Learning Platforms</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.khanacademy.org" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Khan Academy</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.coursera.org" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Coursera</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.edx.org" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>edX</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0;">
+                            <a href="https://www.udemy.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Udemy</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: var(--secondary); margin-bottom: 1rem;">💻 Coding Practice</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://leetcode.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>LeetCode</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.hackerrank.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>HackerRank</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.codewars.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Codewars</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0;">
+                            <a href="https://www.codeforces.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Codeforces</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: var(--accent); margin-bottom: 1rem;">🧮 Math Resources</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.wolframalpha.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Wolfram Alpha</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://brilliant.org" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Brilliant</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.geogebra.org" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>GeoGebra</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0;">
+                            <a href="https://www.desmos.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Desmos</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: #FF6B6B; margin-bottom: 1rem;">📚 Documentation</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://developer.mozilla.org" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>MDN Web Docs</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://docs.python.org" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Python Docs</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.w3schools.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>W3Schools</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0;">
+                            <a href="https://stackoverflow.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Stack Overflow</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: #4ECDC4; margin-bottom: 1rem;">🎨 Design Tools</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.figma.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Figma</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://www.canva.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Canva</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://color.adobe.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Adobe Color</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0;">
+                            <a href="https://fonts.google.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Google Fonts</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: #F093FB; margin-bottom: 1rem;">🛠️ Developer Tools</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://github.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>GitHub</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://code.visualstudio.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>VS Code</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            <a href="https://replit.com" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>Replit</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                        <li style="padding: 0.5rem 0;">
+                            <a href="https://codesandbox.io" target="_blank"
+                                style="color: var(--dark-text); display: flex; justify-content: space-between; align-items: center;">
+                                <span>CodeSandbox</span>
+                                <span style="font-size: 1.2rem;">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <!-- Combined CTA Section -->
+        <section class="section scroll-reveal" style="margin-top: 2rem; margin-bottom: 2rem;">
             <div
-                style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: var(--primary); opacity: 0.1; border-radius: 50%;">
-            </div>
-
-            <div class="grid grid-2" style="gap: 4rem; align-items: center;">
-                <!-- Contact Side -->
-                <div>
-                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Missing Something?</h2>
-                    <p style="color: #666; margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
-                        Can't find the resource you're looking for? Have a great tutorial to share? Let us know so we
-                        can improve the library for everyone.
-                    </p>
-                    <a href="contact.html" class="btn btn-secondary" style="padding: 12px 30px;">
-                        Contact Us
-                    </a>
-                </div>
-
-                <!-- Donation Side -->
+                style="background: linear-gradient(135deg, rgba(42, 77, 255, 0.05), rgba(0, 212, 255, 0.05)); border-radius: 24px; padding: 4rem 2rem; position: relative; overflow: hidden;">
+                <!-- Decorative circle -->
                 <div
-                    style="background: #ffffff; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); text-align: center; border: 1px solid rgba(0,0,0,0.02);">
-                    <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary);">Support MTC</h2>
-                    <p style="color: #666; margin-bottom: 2rem; font-size: 1rem;">
-                        Your contributions help us fund student projects, host competitions, and provide free
-                        educational materials.
-                    </p>
-                    <a href="contact.html#donation-details" class="btn btn-primary"
-                        style="width: 100%; justify-content: center; display: flex; align-items: center; gap: 0.5rem;">
-                        <span>Make a Donation</span>
-                        <span>→</span>
-                    </a>
+                    style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: var(--primary); opacity: 0.1; border-radius: 50%;">
+                </div>
+
+                <div class="grid grid-2" style="gap: 4rem; align-items: center;">
+                    <!-- Contact Side -->
+                    <div>
+                        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Missing Something?</h2>
+                        <p style="color: #666; margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
+                            Can't find the resource you're looking for? Have a great tutorial to share? Let us know so
+                            we
+                            can improve the library for everyone.
+                        </p>
+                        <a href="contact.html" class="btn btn-secondary" style="padding: 12px 30px;">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <!-- Donation Side -->
+                    <div
+                        style="background: #ffffff; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); text-align: center; border: 1px solid rgba(0,0,0,0.02);">
+                        <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary);">Support MTC</h2>
+                        <p style="color: #666; margin-bottom: 2rem; font-size: 1rem;">
+                            Your contributions help us fund student projects, host competitions, and provide free
+                            educational materials.
+                        </p>
+                        <a href="contact.html#donation-details" class="btn btn-primary"
+                            style="width: 100%; justify-content: center; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>Make a Donation</span>
+                            <span>→</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
