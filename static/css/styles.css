@@ -482,13 +482,17 @@ img {
   display: flex;
   flex-shrink: 0;
   /* Prevents shrinking */
+  height: 100%;
 }
 
 .marquee-image {
-  width: 20vw;
-  /* Each image takes 20% of the viewport width */
+  width: auto;
+  /* Let width depend on aspect ratio */
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  /* Ensure the whole image is visible */
+  flex-shrink: 0;
+  /* Prevent image from shrinking */
   filter: brightness(0.6);
   /* Darken images slightly for text readability */
 }
@@ -539,13 +543,32 @@ img {
 /* --- Media Queries (Adapt image size for small screens) --- */
 
 @media (max-width: 600px) {
+  .hero-section {
+    min-height: 70vh;
+    padding: 60px 0 40px;
+  }
+
   .marquee-image {
-    width: 33.33vw;
-    /* Show fewer, wider images on mobile */
+    height: 70vh;
+    /* Taller images for better visibility */
+    width: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Show full image without cropping */
+    min-width: 85vw;
+    /* Large and prominent but still allows marquee scrolling */
+  }
+
+  .hero-section .hero-content {
+    padding: 30px 15px;
   }
 
   .hero-section .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .hero-section .hero-content p {
+    font-size: 1.1rem;
   }
 }
 
