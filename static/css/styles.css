@@ -544,31 +544,19 @@ img {
 
 @media (max-width: 600px) {
   .hero-section {
-    min-height: 70vh;
-    padding: 60px 0 40px;
+    min-height: 50vh;
+    /* Optimized height for mobile */
   }
 
   .marquee-image {
-    height: 70vh;
-    /* Taller images for better visibility */
-    width: auto;
-    /* Maintain aspect ratio */
-    object-fit: contain;
-    /* Show full image without cropping */
-    min-width: 85vw;
-    /* Large and prominent but still allows marquee scrolling */
-  }
-
-  .hero-section .hero-content {
-    padding: 30px 15px;
+    width: 100vw;
+    height: auto;
+    /* Full viewport width - each image fills the entire screen */
+    object-fit: cover;
   }
 
   .hero-section .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-section .hero-content p {
-    font-size: 1.1rem;
+    font-size: 2.5rem;
   }
 }
 
