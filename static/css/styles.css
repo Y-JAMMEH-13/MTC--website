@@ -441,7 +441,7 @@ img {
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: #666;
+  color: #ebe2e2;
   margin-bottom: 2rem;
   line-height: 1.8;
 }
@@ -543,16 +543,9 @@ img {
 /* --- Media Queries (Adapt image size for small screens) --- */
 
 @media (max-width: 600px) {
-  .hero-section {
-    min-height: 50vh;
-    /* Optimized height for mobile */
-  }
-
   .marquee-image {
-    width: 100vw;
-    height: auto;
-    /* Full viewport width - each image fills the entire screen */
-    object-fit: cover;
+    width: auto;
+    /* Allow natural aspect ratio based on height */
   }
 
   .hero-section .hero-content h1 {
