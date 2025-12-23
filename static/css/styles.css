@@ -474,8 +474,8 @@ img {
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
-  animation: marquee-scroll 60s linear infinite;
-  /* Animation runs for 60 seconds */
+  animation: marquee-scroll 30s linear infinite;
+  /* Animation runs for 30 seconds */
 }
 
 .marquee-content {
