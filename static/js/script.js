@@ -6,6 +6,38 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // ========================================
+    // Randomize Hero Marquee Images
+    // ========================================
+    const marqueeContainers = document.querySelectorAll('.marquee-content');
+    if (marqueeContainers.length > 0) {
+        // Get images from the first container (assuming they are identical)
+        const images = Array.from(marqueeContainers[0].children);
+
+        if (images.length > 0) {
+            // Generate a random starting index
+            const randomIndex = Math.floor(Math.random() * images.length);
+
+            // Rotate the array of images
+            const rotatedImages = [
+                ...images.slice(randomIndex),
+                ...images.slice(0, randomIndex)
+            ];
+
+            // Update all marquee containers with the new order
+            marqueeContainers.forEach(container => {
+                // Clear current content
+                container.innerHTML = '';
+
+                // Append images in the new order
+                rotatedImages.forEach(img => {
+                    // Clone the image to ensure it's unique for each container
+                    container.appendChild(img.cloneNode(true));
+                });
+            });
+        }
+    }
+
+    // ========================================
     // Mobile Menu Toggle
     // ========================================
     const hamburger = document.getElementById('hamburger');
