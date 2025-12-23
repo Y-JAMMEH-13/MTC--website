@@ -149,7 +149,9 @@ img {
   color: var(--primary);
 }
 
+
 .logo img {
+  border-radius: 20px;
   height: 60px;
   width: auto;
   transition: var(--transition-normal);
