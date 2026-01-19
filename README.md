@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD025 -->
-# MTC Website — Full Project Specification (Static Folder Version MTC--V.0.04)
+# KSSS MATHS & TECH CLUB Website — Full Project Specification (Static Folder Version KSSS--V.0.04)
 
-This is the **complete and final README** for generating the entire **MTC Website**, updated with a **static folder structure** for assets.  
+This is the **complete and final README** for generating the entire **KSSS MATHS & TECH CLUB Website**, updated with a **static folder structure** for assets.  
 Use this README with Copilot or any coding agent to generate the full website.
 
 ---
@@ -57,9 +57,10 @@ Profile cards must include these members:
 
 | Purpose | Hex |
 |--------|------|
-| Primary | `#2A4DFF` |
-| Secondary | `#00D4FF` |
-| Accent | `#6A00FF` |
+| Primary | `#000080` |
+| Secondary | `#1A1AFD` |
+| Accent | `#FE3807` |
+| Success | `#158916` |
 | Dark Text | `#1A1A1A` |
 | Background | `#F5F7FA` |
 | Cards | `#FFFFFF` |

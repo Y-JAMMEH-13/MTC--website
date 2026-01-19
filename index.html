@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Maths & Tech Club - Empowering students through mathematics and technology">
-    <title>Home - KMTC</title>
+    <title>Home - MTC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
@@ -15,7 +18,7 @@
             <div class="nav-container">
                 <div class="logo"><a href="index.html">
                         <img src="static/images/logo.png" class="logo-img" alt="Logo">
-                        <span class="nav-logo">MTC</span>
+                        <span class="nav-logo">KSSS, MTC</span>
                     </a>
                 </div>
                 <div class="nav-links">
@@ -28,6 +31,7 @@
                         <li><a href="resources.html" class="nav-link">Resources</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
+                    <a href="contact.html" class="btn btn-primary nav-cta">Join the Club</a>
                     <button class="hamburger" id="hamburger">
                         <span></span>
                         <span></span>
@@ -38,54 +42,40 @@
         </nav>
     </header>
     <main>
+        <!-- Hero Section -->
         <header class="hero-section">
-            <div class="scrolling-image-marquee">
-                <div class="marquee-content">
-                    <img src="static/images/images/hero-img-1.png" alt="MTC event" class="marquee-image">
-                    <img src="static/images/images/hero-img-2.png" alt="MTC project" class="marquee-image">
-                    <img src="static/images/images/hero-img-3.png" alt="MTC team" class="marquee-image">
-                    <img src="static/images/images/hero-img-4.png" alt="MTC learning" class="marquee-image">
-                    <img src="static/images/images/hero-img-5.png" alt="MTC workshop" class="marquee-image">
-                </div>
-                <div class="marquee-content" aria-hidden="true">
-                    <img src="static/images/images/hero-img-1.png" alt="MTC event" class="marquee-image">
-                    <img src="static/images/images/hero-img-2.png" alt="MTC project" class="marquee-image">
-                    <img src="static/images/images/hero-img-3.png" alt="MTC team" class="marquee-image">
-                    <img src="static/images/images/hero-img-4.png" alt="MTC learning" class="marquee-image">
-                    <img src="static/images/images/hero-img-5.png" alt="MTC workshop" class="marquee-image">
-                </div>
-            </div>
-
+            <span class="hero-badge">Welcome to MTC</span>
             <div class="hero-content fade-in-up">
-                <h1 class="hero-title">Maths & Tech Club</h1>
+                <h1 class="hero-title">Maths & Tech<br>Club</h1>
                 <p class="hero-subtitle">
                     Empowering students to explore the fascinating worlds of mathematics and technology.
-                    Join us in building innovative projects, solving complex problems, and shaping the future.
                 </p>
-                <a href="contact.html" class="btn btn-primary">Join the Club</a>
             </div>
         </header>
 
         <!-- About Preview Section -->
         <section class="section scroll-reveal">
-            <h2 class="section-tseitle">What We Do</h2>
+            <h2 class="section-title">What We Do</h2>
             <div class="grid grid-3">
-                <div class="card">
-                    <h3 class="card-title">🧮 Mathematics</h3>
+                <div class="card text-center card-accent-primary">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🧮</div>
+                    <h3 class="card-title">Mathematics</h3>
                     <p class="card-description">
                         Explore advanced mathematical concepts, problem-solving techniques, and participate in
                         competitions.
                     </p>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">💻 Technology</h3>
+                <div class="card text-center card-accent-secondary">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">💻</div>
+                    <h3 class="card-title">Technology</h3>
                     <p class="card-description">
                         Learn programming, web development, robotics, and cutting-edge technologies through hands-on
                         projects.
                     </p>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">🚀 Innovation</h3>
+                <div class="card text-center card-accent-red">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+                    <h3 class="card-title">Innovation</h3>
                     <p class="card-description">
                         Collaborate on innovative projects that combine mathematics and technology to solve real-world
                         problems.
@@ -95,119 +85,124 @@
         </section>
 
         <!-- Projects Preview Section -->
-        <div style="background-color: white; width: 100%;">
-            <section class="section scroll-reveal">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="grid grid-2">
-                    <div class="card">
-                        <span class="badge badge-ongoing">Ongoing</span>
-                        <h3 class="card-title mt-2">AI Study Assistant</h3>
-                        <p class="card-description">
-                            Building an AI-powered study assistant to help students with homework and exam preparation
-                            using
-                            machine learning.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <span class="badge badge-upcoming">Upcoming</span>
-                        <h3 class="card-title mt-2">Math Competition Platform</h3>
-                        <p class="card-description">
-                            Developing an online platform for hosting mathematics competitions and challenges for
-                            students.
-                        </p>
-                    </div>
+        <section class="section scroll-reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <span class="badge badge-ongoing"
+                        style="align-self: flex-start; margin-bottom: 1rem;">Ongoing</span>
+                    <h3 class="card-title mt-2">AI Study Assistant</h3>
+                    <p class="card-description">
+                        Building an AI-powered study assistant to help students with homework and exam preparation
+                        using machine learning.
+                    </p>
                 </div>
-                <div class="text-center mt-4">
-                    <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+                <div class="card">
+                    <span class="badge badge-upcoming"
+                        style="align-self: flex-start; margin-bottom: 1rem;">Upcoming</span>
+                    <h3 class="card-title mt-2">Math Competition Platform</h3>
+                    <p class="card-description">
+                        Developing an online platform for hosting mathematics competitions and challenges for
+                        students.
+                    </p>
                 </div>
-            </section>
-        </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+            </div>
+        </section>
 
         <!-- Team Preview Section -->
         <section class="section scroll-reveal">
             <h2 class="section-title">Meet Our Team</h2>
             <p class="text-center mb-4"
-                style="color: #c0b2b2; max-width: 600px; margin-left: auto; margin-right: auto;">
+                style="color: var(--light-text); max-width: 600px; margin-left: auto; margin-right: auto;">
                 Our dedicated executive team works tirelessly to create an engaging and enriching experience for all
                 members.
             </p>
             <div class="grid grid-4">
-                <div class="card text-center">
-                    <div class="team-image-container team-image-small">
-                        <span class="team-image-placeholder">HIB</span>
+                <div class="card text-center card-accent-primary" style="align-items: center; padding: 2rem;">
+                    <div class="team-image-container team-image-small"
+                        style="margin-bottom: 1rem; width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary));">
+                        <span class="team-image-placeholder"
+                            style="width: 80px; height: 80px; line-height: 80px; font-size: 1.2rem;">HIB</span>
                         <img src="static/images/team/placeholders/Haja_Isatou_Bah_(presidente).png"
                             alt="Haja Isatou Bah" class="team-member-image" onerror="this.style.display='none'">
                     </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Haja Isatou Bah</h4>
+                    <h4 class="card-title" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Haja Isatou Bah</h4>
                     <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">President</p>
                 </div>
-                <div class="card text-center">
-                    <div class="team-image-container team-image-small">
-                        <span class="team-image-placeholder">YJ</span>
+                <div class="card text-center card-accent-secondary" style="align-items: center; padding: 2rem;">
+                    <div class="team-image-container team-image-small"
+                        style="margin-bottom: 1rem; width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary), var(--accent-red));">
+                        <span class="team-image-placeholder"
+                            style="width: 80px; height: 80px; line-height: 80px; font-size: 1.2rem;">YJ</span>
                         <img src="static/images/team/placeholders/Yusupha_jammeh_(Visit. president).png"
                             alt="Yusupha Jammeh" class="team-member-image" onerror="this.style.display='none'">
                     </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Yusupha Jammeh</h4>
-                    <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Vice President</p>
+                    <h4 class="card-title" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Yusupha Jammeh</h4>
+                    <p style="color: var(--secondary); font-weight: 600; font-size: 0.9rem;">Vice President</p>
                 </div>
-                <div class="card text-center">
-                    <div class="team-image-container team-image-small">
-                        <span class="team-image-placeholder">MM</span>
+                <div class="card text-center card-accent-red" style="align-items: center; padding: 2rem;">
+                    <div class="team-image-container team-image-small"
+                        style="margin-bottom: 1rem; width: 80px; height: 80px; background: linear-gradient(135deg, var(--accent-red), var(--primary));">
+                        <span class="team-image-placeholder"
+                            style="width: 80px; height: 80px; line-height: 80px; font-size: 1.2rem;">MM</span>
                         <img src="static/images/team/placeholders/Mariama_Mboob_(Secretary).png" alt="Mariama Mboob"
                             class="team-member-image" onerror="this.style.display='none'">
                     </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">Mariama Mboob</h4>
-                    <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Secretary</p>
+                    <h4 class="card-title" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Mariama Mboob</h4>
+                    <p style="color: var(--accent-red); font-weight: 600; font-size: 0.9rem;">Secretary</p>
                 </div>
-                <div class="card text-center">
-                    <div class="team-image-container team-image-small">
-                        <span class="team-image-placeholder">JMS</span>
+                <div class="card text-center card-accent-thick-red" style="align-items: center; padding: 2rem;">
+                    <div class="team-image-container team-image-small"
+                        style="margin-bottom: 1rem; width: 80px; height: 80px; background: linear-gradient(135deg, var(--accent-red), var(--accent-red-thick));">
+                        <span class="team-image-placeholder"
+                            style="width: 80px; height: 80px; line-height: 80px; font-size: 1.2rem;">JMS</span>
                         <img src="static/images/team/placeholders/John_M_Samura_(asst. Secretaty).png"
                             alt="John M. Samura" class="team-member-image" onerror="this.style.display='none'">
                     </div>
-                    <h4 class="card-title" style="font-size: 1.1rem;">John M. Samura</h4>
-                    <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Asst. Secretary</p>
+                    <h4 class="card-title" style="font-size: 1.1rem; margin-bottom: 0.25rem;">John M. Samura</h4>
+                    <p style="color: var(--accent-red-thick); font-weight: 600; font-size: 0.9rem;">Asst. Secretary</p>
                 </div>
             </div>
-            <div class="text-center mt-4">
+            <div class="text-center mt-4" style="margin-top: 2rem;">
                 <a href="team.html" class="btn btn-secondary">Meet the Full Team</a>
             </div>
         </section>
 
         <!-- Events Preview Section -->
-        <div style="background-color: white; width: 100%;">
-            <section class="section scroll-reveal">
-                <h2 class="section-title">Upcoming Events</h2>
-                <div class="grid grid-2">
-                    <div class="card">
-                        <h3 class="card-title">Tech Workshop Series</h3>
-                        <p style="color: var(--secondary); font-weight: 600; margin-bottom: 0.5rem;">📅 Coming Soon</p>
-                        <p class="card-description">
-                            Join our hands-on workshops covering web development, Python programming, and data science
-                            fundamentals.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-title">Mathematics Olympiad Prep</h3>
-                        <p style="color: var(--secondary); font-weight: 600; margin-bottom: 0.5rem;">📅 Coming Soon</p>
-                        <p class="card-description">
-                            Intensive preparation sessions for students interested in participating in mathematics
-                            competitions.
-                        </p>
-                    </div>
+        <section class="section scroll-reveal">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3 class="card-title">Tech Workshop Series</h3>
+                    <p style="color: var(--secondary); font-weight: 600; margin-bottom: 0.5rem;">📅 Coming Soon</p>
+                    <p class="card-description">
+                        Join our hands-on workshops covering web development, Python programming, and data science
+                        fundamentals.
+                    </p>
                 </div>
-                <div class="text-center mt-4">
-                    <a href="events.html" class="btn btn-secondary">View All Events</a>
+                <div class="card">
+                    <h3 class="card-title">Mathematics Olympiad Prep</h3>
+                    <p style="color: var(--secondary); font-weight: 600; margin-bottom: 0.5rem;">📅 Coming Soon</p>
+                    <p class="card-description">
+                        Intensive preparation sessions for students interested in participating in mathematics
+                        competitions.
+                    </p>
                 </div>
-            </section>
-        </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="events.html" class="btn btn-secondary">View All Events</a>
+            </div>
+        </section>
 
         <!-- CTA Section -->
         <section class="section scroll-reveal text-center">
-            <div
-                style="background: linear-gradient(135deg, rgba(42, 77, 255, 0.1), rgba(0, 212, 255, 0.1)); padding: 4rem 2rem; border-radius: var(--radius-lg);">
-                <h2 style="margin-bottom: 1rem;">Ready to Join Us?</h2>
-                <p style="color: #666; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <div style="background: white; padding: 4rem 2rem; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                <h2 style="margin-bottom: 1rem; color: var(--primary);">Ready to Join Us?</h2>
+                <p
+                    style="color: var(--light-text); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
                     Become part of a community passionate about mathematics and technology. Let's learn, create, and
                     innovate together!
                 </p>
@@ -220,7 +215,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
-                <div class="footer-logo">MTC</div>
+                <div class="footer-logo"><img src="static/images/logo.png" class="logo-img" alt="Logo"></div>
                 <div class="social-icons">
                     <a href="#" class="social-icon" aria-label="Facebook">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
