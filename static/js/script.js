@@ -6,38 +6,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // ========================================
-    // Randomize Hero Marquee Images
-    // ========================================
-    const marqueeContainers = document.querySelectorAll('.marquee-content');
-    if (marqueeContainers.length > 0) {
-        // Get images from the first container (assuming they are identical)
-        const images = Array.from(marqueeContainers[0].children);
-
-        if (images.length > 0) {
-            // Generate a random starting index
-            const randomIndex = Math.floor(Math.random() * images.length);
-
-            // Rotate the array of images
-            const rotatedImages = [
-                ...images.slice(randomIndex),
-                ...images.slice(0, randomIndex)
-            ];
-
-            // Update all marquee containers with the new order
-            marqueeContainers.forEach(container => {
-                // Clear current content
-                container.innerHTML = '';
-
-                // Append images in the new order
-                rotatedImages.forEach(img => {
-                    // Clone the image to ensure it's unique for each container
-                    container.appendChild(img.cloneNode(true));
-                });
-            });
-        }
-    }
-
-    // ========================================
     // Mobile Menu Toggle
     // ========================================
     const hamburger = document.getElementById('hamburger');
@@ -245,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Animated Background (Math & Tech Symbols)
     // ========================================
     function createFloatingSymbols(container, count, minSize, maxSize) {
-        const symbols = ['π', '∞', '∑', '∫', '{ }', '</>', '√', '∆', 'f(x)', '01', '≠', '≈', '∇'];
+        const symbols = ['π', '∞', '∑', '∫', '{ }', '</>', '√', 'y', '∆', 'f(x)', '01', '≠', '≈', '∇'];
 
         for (let i = 0; i < count; i++) {
             const symbol = document.createElement('div');
@@ -330,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // If we put it in .hero-section (which is margined), it will be relative to that.
             // To achieve "behind navbar", we should append to body but position it absolutely at top.
 
-            document.body.appendChild(heroBg);
+            heroSection.appendChild(heroBg);
             // It has z-index -1, blobs have -2. This sits on top of blobs.
 
             createFloatingSymbols(heroBg, 12, 4, 7); // 12 big symbols
@@ -341,33 +309,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// ========================================
-// Utility Functions
-// ========================================
 
-// Debounce function for performance optimization
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Throttle function for scroll events
-function throttle(func, limit) {
-    let inThrottle;
-    return function () {
-        const args = arguments;
-        const context = this;
-        if (!inThrottle) {
-            func.apply(context, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
-        }
-    };
-}

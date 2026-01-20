@@ -35,7 +35,7 @@
   /* Pure White cards */
   --dark-text: #111827;
   /* Almost Black */
-  --light-text: #6B7280;
+  --light-text: #2f342f;
   /* Cool Gray text */
   --border-color: #E5E7EB;
   /* Light border */
@@ -45,7 +45,7 @@
   --font-body: 'Inter', sans-serif;
 
   /* Spacing */
-  --section-padding: 100px;
+  --section-padding: 20px;
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-xl: 24px;
@@ -236,7 +236,7 @@ header {
 }
 
 .nav-link:hover {
-  color: var(--primary);
+  color: var(--accent-red);
 }
 
 /* ========================================
@@ -454,8 +454,9 @@ header {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-hover);
-  border-color: rgba(41, 98, 255, 0.1);
+  box-shadow: var(--shadow-hover),
+    0 0 0 2px rgba(254, 56, 7, 0.15);
+  border-color: rgba(254, 56, 7, 0.2);
 }
 
 .card-title {
@@ -517,7 +518,7 @@ header {
   width: 100%;
   max-width: 1000px;
   /* Maximized for center text */
-  margin: 140px auto 60px;
+  margin: 140px auto 2px;
   /* Clear navbar */
   min-height: auto;
   display: flex;
@@ -528,12 +529,6 @@ header {
   padding: 0 2rem;
   background: transparent;
   box-shadow: none;
-}
-
-/* Marquee as Background (Optional - hiding for clone purity unless requested) */
-.scrolling-image-marquee {
-  display: none;
-  /* Hiding to match clean StriveCloud look */
 }
 
 /* ========================================
@@ -658,7 +653,13 @@ header {
   /* Wider */
   max-width: 1400px;
   /* Increased to accommodate longer text and wider feel */
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
 
+/* Subtle red glow on navbar hover */
+.navbar:hover {
+  box-shadow: 0 8px 32px rgba(254, 56, 7, 0.08),
+    0 4px 16px rgba(254, 56, 7, 0.05);
 }
 
 .navbar::after {
@@ -751,7 +752,7 @@ header {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  margin: 140px auto 60px;
+  margin: 140px auto 2px;
   min-height: auto;
   display: flex;
   flex-direction: column;
