@@ -283,6 +283,9 @@ header {
    ======================================== */
 
 @media (max-width: 768px) {
+  .padding-top {
+    padding-top: 0px;
+  }
 
   /* Hide the CTA button on mobile */
   .nav-cta {
@@ -511,25 +514,33 @@ header {
 }
 
 /* ========================================
-   Hero Section (Clone)
+   Hero Section (FINAL – DO NOT DUPLICATE)
    ======================================== */
 .hero-section {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  /* Maximized for center text */
-  margin: 140px auto 2px;
-  /* Clear navbar */
-  min-height: auto;
+  min-height: 100vh;
+  /* Full viewport */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: flex-start;
+  /* Content starts below */
   padding: 0 2rem;
+  overflow: hidden;
   background: transparent;
-  box-shadow: none;
+  z-index: 5;
 }
+
+/* ========================================
+   Hero Content (Spacing Control)
+   ======================================== */
+.hero-content {
+  margin-top: 140px;
+  /* Space below floating navbar */
+  max-width: 800px;
+  text-align: center;
+}
+
 
 /* ========================================
    Animated Background
@@ -743,27 +754,6 @@ header {
   background: rgba(41, 98, 255, 0.05);
   color: var(--secondary);
   transform: translateY(-2px);
-}
-
-/* ========================================
-   Hero Section Glow
-   ======================================== */
-.hero-section {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  margin: 140px auto 2px;
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 2rem;
-  background: transparent;
-  box-shadow: none;
-  z-index: 5;
-  /* Lower than top header/navbar to prevent overlap */
 }
 
 .hero-section::before {
