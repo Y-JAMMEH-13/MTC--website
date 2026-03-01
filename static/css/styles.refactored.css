@@ -59,6 +59,10 @@
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Navbar Dimensions (Calculated) */
+  --navbar-top: 24px;
+  --navbar-height: 80px;
 }
 
 /* ========================================
@@ -100,6 +104,28 @@ h6 {
 a {
   text-decoration: none;
   color: inherit;
+  transition: var(--transition-fast);
+}
+
+/* Skip to Content Link (Accessibility) */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: #ffffff;
+  padding: 12px 24px;
+  z-index: 10000;
+  border-radius: 0 0 8px 8px;
+  font-weight: 600;
+  transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+  outline: 2px solid var(--accent-red);
+  outline-offset: 2px;
 }
 
 ul {
@@ -134,7 +160,7 @@ header {
    Takes priority over earlier basic navbar styles */
 .navbar {
   position: fixed;
-  top: 24px;
+  top: var(--navbar-top);
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
@@ -143,12 +169,12 @@ header {
   padding: 0.8rem 2.5rem;
 
   /* Glass morphism effect */
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
   /* Rounded capsule shape */
-  border-radius: 20px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
 
@@ -177,7 +203,7 @@ header {
 
 /* Scrolled state - more solid appearance */
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.8);
   box-shadow:
     0 10px 40px rgba(0, 0, 0, 0.08),
     0 4px 12px rgba(0, 0, 0, 0.04);
@@ -392,7 +418,7 @@ header {
   min-height: 80vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 0 2rem;
   overflow: hidden;
   background: transparent;
@@ -418,7 +444,7 @@ header {
 }
 
 .hero-content {
-  margin-top: 140px;
+  margin-top: 0;
   max-width: 800px;
   text-align: center;
   display: flex;
@@ -1121,12 +1147,12 @@ header {
 }
 
 /* ========================================
-   RESPONSIVE DESIGN - TABLET (max-width: 1024px)
+   RESPONSIVE DESIGN - TABLET & LARGE TABLET (max-width: 1366px)
    ======================================== */
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   /* Typography scaling */
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   h2 {
     font-size: 2.2rem;
@@ -1136,17 +1162,26 @@ header {
   }
 
   .hero-section {
-    min-height: 60vh;
-    padding: 0 1.5rem;
+    min-height: 480px; /* Calculated professional height */
+    padding: 110px 1.5rem 50px 1.5rem; /* Calculated 474px Total Height (35% vh) */
+    align-items: center; /* Restore balanced centering */
+    display: flex;
+    justify-content: center;
   }
 
   .hero-content {
-    margin-top: 80px;
+    margin-top: 0;
+    width: 100%;
   }
 
-  .hero-title {
-    font-size: 2.8rem;
+  /* Scale down symbols to prevent covering text on tablets */
+  .hero-background .floating-symbol {
+    font-size: clamp(20px, 6vw, 50px) !important;
   }
+
+  /* .hero-title {
+    font-size: 2.8rem;
+  } */ /* This rule is now global, no change needed for tablet */
 
   .section {
     padding: 40px 1.5rem;
@@ -1281,7 +1316,7 @@ header {
   }
 
   .section {
-    padding: 60px 1.5rem;
+    padding: 40px 1.5rem;
   }
 
   .navbar {
@@ -1294,13 +1329,18 @@ header {
    RESPONSIVE DESIGN - MOBILE (max-width: 768px)
    ======================================== */
 @media (max-width: 768px) {
+  :root {
+    --navbar-top: 8px;
+    --navbar-height: 70px;
+  }
   .hero-section {
-    min-height: 50vh;
-    padding: 0 1rem;
+    min-height: auto;
+    padding: 110px 1rem 40px 1rem;
+    align-items: flex-start;
   }
 
   .hero-content {
-    margin-top: 60px;
+    margin-top: 0;
   }
 
   .hero-title {
@@ -1381,12 +1421,13 @@ header {
   }
 
   .hero-section {
-    min-height: 40vh;
-    padding: 0 1rem;
+    min-height: auto;
+    padding: 100px 1rem 30px 1rem;
+    align-items: flex-start;
   }
 
   .hero-content {
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   .hero-title {
@@ -1404,8 +1445,8 @@ header {
   /* Compact navbar for mobile */
   .navbar {
     padding: 0;
-    width: 90%;
-    max-width: 90%;
+    width: 96%;
+    max-width: 96%;
   }
 
   .nav-container {
@@ -2089,7 +2130,7 @@ header {
 }
 .mtc-custom-90 {
   background: white;
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 24px;
   box-shadow: var(--shadow-lg);
 }
@@ -2145,7 +2186,7 @@ header {
     rgba(42, 77, 255, 0.1),
     rgba(0, 212, 255, 0.1)
   );
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
@@ -2210,7 +2251,7 @@ header {
     rgba(0, 212, 255, 0.05)
   );
   border-radius: 24px;
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
   position: relative;
   overflow: hidden;
 }

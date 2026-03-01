@@ -31,10 +31,10 @@ npx postcss static/css/styles.refactored.css \
 
 ## 2. JavaScript Minification
 
-**Source:** `static/js/main.js` → **Output:** `assets/js/main.min.js`
+**Source:** `static/js/script.js` → **Output:** `assets/js/main.min.js`
 
 ```bash
-npx uglifyjs static/js/main.js \
+npx uglifyjs static/js/script.js \
   --compress \
   --mangle \
   --output assets/js/main.min.js

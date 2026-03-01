@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://www.mtc.gm/contact.html" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
     <title>Contact - MTC</title>
     <link rel="stylesheet" href="assets/css/main.min.css" />
     <link rel="manifest" href="site.webmanifest" />
@@ -130,7 +130,13 @@
             <a href="contact.html" class="btn btn-primary nav-cta"
               >Join the Club</a
             >
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+            <button
+              class="hamburger"
+              id="hamburger"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="navMenu"
+            >
               <span></span>
               <span></span>
               <span></span>
@@ -143,9 +149,7 @@
     <main id="main-content">
       <header class="hero-section">
         <div class="hero-content fade-in-up">
-          <span class="hero-badge mtc-custom-1" 
-            >Get in Touch</span
-          >
+          <span class="hero-badge mtc-custom-1">Get in Touch</span>
           <h1 class="hero-title">Contact Us</h1>
           <p class="hero-subtitle">
             Have a question, suggestion, or want to join? We'd love to hear from
@@ -158,73 +162,42 @@
       <section class="section scroll-reveal">
         <div class="grid grid-2">
           <div class="contact-info">
-            <h2
-              class="section-title mtc-custom-17"
-              
-            >
-              Get in Touch
-            </h2>
-            <p
-               class="mtc-custom-18"
-            >
+            <h2 class="section-title mtc-custom-17">Get in Touch</h2>
+            <p class="mtc-custom-18">
               Have questions or suggestions? We're here to help. Reach out to us
               through any of the following channels.
             </p>
 
-            <div
-              class="info-item mtc-custom-19"
-              
-            >
-              <div
-                 class="mtc-custom-20"
-              >
-                📞
-              </div>
+            <div class="info-item mtc-custom-19">
+              <div class="mtc-custom-20">📞</div>
               <div>
-                <h4  class="mtc-custom-21">Phone</h4>
-                <p  class="mtc-custom-22">+220 ### ####</p>
+                <h4 class="mtc-custom-21">Phone</h4>
+                <p class="mtc-custom-22">+220 ### ####</p>
               </div>
             </div>
 
-            <div
-              class="info-item mtc-custom-19"
-              
-            >
-              <div
-                 class="mtc-custom-23"
-              >
-                ✉️
-              </div>
+            <div class="info-item mtc-custom-19">
+              <div class="mtc-custom-23">✉️</div>
               <div>
-                <h4  class="mtc-custom-21">Email</h4>
-                <p  class="mtc-custom-22">info@mtc.gm</p>
+                <h4 class="mtc-custom-21">Email</h4>
+                <p class="mtc-custom-22">info@mtc.gm</p>
               </div>
             </div>
 
-            <div
-              class="info-item mtc-custom-24"
-              
-            >
-              <div
-                 class="mtc-custom-25"
-              >
-                📍
-              </div>
+            <div class="info-item mtc-custom-24">
+              <div class="mtc-custom-25">📍</div>
               <div>
-                <h4  class="mtc-custom-21">Address</h4>
-                <p  class="mtc-custom-22">
-                  KSSS, Sereconda, KMC, The Gambia
-                </p>
+                <h4 class="mtc-custom-21">Address</h4>
+                <p class="mtc-custom-22">KSSS, Sereconda, KMC, The Gambia</p>
               </div>
             </div>
 
-            <h3  class="mtc-custom-26">Follow Us</h3>
-            <div class="social-links mtc-custom-27" >
+            <h3 class="mtc-custom-26">Follow Us</h3>
+            <div class="social-links mtc-custom-27">
               <a
                 href="#"
                 class="social-icon mtc-custom-28"
                 aria-label="Social Media Link"
-                
               >
                 <i class="fab fa-facebook-f"></i>
               </a>
@@ -232,7 +205,6 @@
                 href="#"
                 class="social-icon mtc-custom-28"
                 aria-label="Social Media Link"
-                
               >
                 <i class="fab fa-twitter"></i>
               </a>
@@ -240,71 +212,58 @@
                 href="#"
                 class="social-icon mtc-custom-28"
                 aria-label="Social Media Link"
-                
               >
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
           </div>
 
-          <div class="contact-form-container card mtc-custom-29" >
-            <h3  class="mtc-custom-30">
-              Send us a Message
-            </h3>
-            <form id="contactForm">
-              <div  class="mtc-custom-26">
-                <label
-                  for="name"
-                   class="mtc-custom-31"
-                  >Name</label
-                >
+          <div class="contact-form-container card mtc-custom-29">
+            <h3 class="mtc-custom-30">Send us a Message</h3>
+            <form
+              id="contactForm"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <div class="mtc-custom-26">
+                <label for="name" class="mtc-custom-31">Name</label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   required
-                   class="mtc-custom-32"
+                  class="mtc-custom-32"
                 />
               </div>
-              <div  class="mtc-custom-26">
-                <label
-                  for="email"
-                   class="mtc-custom-31"
-                  >Email</label
-                >
+              <div class="mtc-custom-26">
+                <label for="email" class="mtc-custom-31">Email</label>
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   required
-                   class="mtc-custom-32"
+                  class="mtc-custom-32"
                 />
               </div>
-              <div  class="mtc-custom-26">
-                <label
-                  for="subject"
-                   class="mtc-custom-31"
-                  >Subject</label
-                >
-                <select
-                  id="subject"
-                   class="mtc-custom-33"
-                >
+              <div class="mtc-custom-26">
+                <label for="subject" class="mtc-custom-31">Subject</label>
+                <select id="subject" name="subject" class="mtc-custom-33">
                   <option value="general">General Inquiry</option>
                   <option value="join">Join the Club</option>
                   <option value="project">Project Proposal</option>
                   <option value="partnership">Partnership</option>
                 </select>
               </div>
-              <div  class="mtc-custom-1">
-                <label
-                  for="message"
-                   class="mtc-custom-31"
-                  >Message</label
-                >
+              <div class="mtc-custom-1">
+                <label for="message" class="mtc-custom-31">Message</label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="5"
                   required
-                   class="mtc-custom-34"
+                  class="mtc-custom-34"
                 ></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-block">
@@ -319,137 +278,74 @@
       <section
         id="donation-details"
         class="section scroll-reveal mtc-custom-35"
-        
       >
-        <div class="container mtc-custom-36" >
+        <div class="container mtc-custom-36">
           <h2 class="section-title">Support Our Mission</h2>
-          <p
-            class="text-center mtc-custom-37"
-            
-          >
+          <p class="text-center mtc-custom-37">
             Your generous contributions help us organize events, fund student
             projects, and provide free educational resources to the community.
           </p>
 
           <!-- Wave Donation Card -->
-          <div
-            class="card wave-card mtc-custom-38"
-            
-          >
+          <div class="card wave-card mtc-custom-38">
             <!-- Decorative Circle -->
-            <div
-               class="mtc-custom-39"
-            ></div>
+            <div class="mtc-custom-39"></div>
 
-            <div  class="mtc-custom-40">
-              <div
-                 class="mtc-custom-41"
-              >
-                <i class="fas fa-mobile-alt mtc-custom-42" ></i>
-                <h3  class="mtc-custom-43">
-                  Wave / Mobile Money
-                </h3>
+            <div class="mtc-custom-40">
+              <div class="mtc-custom-41">
+                <i class="fas fa-mobile-alt mtc-custom-42"></i>
+                <h3 class="mtc-custom-43">Wave / Mobile Money</h3>
               </div>
-              <p  class="mtc-custom-44">
-                Quick and easy transfer
-              </p>
+              <p class="mtc-custom-44">Quick and easy transfer</p>
             </div>
 
-            <div
-               class="mtc-custom-45"
-            >
-              <span
-                id="wave-number"
-                 class="mtc-custom-46"
-                >+220 ### ####</span
-              >
+            <div class="mtc-custom-45">
+              <span id="wave-number" class="mtc-custom-46">+220 ### ####</span>
               <button
                 class="copy-btn mtc-custom-47"
                 onclick="copyToClipboard('wave-number')"
                 aria-label="Copy Wave Number"
-                
               >
-                <i
-                  class="fas fa-copy mtc-custom-48"
-                  
-                ></i>
+                <i class="fas fa-copy mtc-custom-48"></i>
               </button>
             </div>
           </div>
 
           <!-- Bank Transfer Card -->
-          <div class="card bank-card mtc-custom-49" >
-            <div
-               class="mtc-custom-50"
-            >
-              <div
-                 class="mtc-custom-51"
-              >
-                <i class="fas fa-university mtc-custom-42" ></i>
+          <div class="card bank-card mtc-custom-49">
+            <div class="mtc-custom-50">
+              <div class="mtc-custom-51">
+                <i class="fas fa-university mtc-custom-42"></i>
               </div>
               <div>
-                <h3
-                   class="mtc-custom-52"
-                >
-                  Bank Transfer
-                </h3>
-                <p
-                   class="mtc-custom-53"
-                >
-                  Guaranty Trust Bank (GTBank)
-                </p>
+                <h3 class="mtc-custom-52">Bank Transfer</h3>
+                <p class="mtc-custom-53">Guaranty Trust Bank (GTBank)</p>
               </div>
             </div>
 
-            <div
-               class="mtc-custom-54"
-            >
+            <div class="mtc-custom-54">
               <!-- Account Number -->
-              <div
-                class="account-detail mtc-custom-55"
-                
-              >
-                <p
-                   class="mtc-custom-56"
-                >
-                  Account Number
-                </p>
-                <div
-                   class="mtc-custom-57"
-                >
-                  <span
-                    id="bank-acc-num"
-                     class="mtc-custom-58"
+              <div class="account-detail mtc-custom-55">
+                <p class="mtc-custom-56">Account Number</p>
+                <div class="mtc-custom-57">
+                  <span id="bank-acc-num" class="mtc-custom-58"
                     >202-###-###-###</span
                   >
                   <button
                     class="copy-small-btn mtc-custom-59"
                     onclick="copyToClipboard('bank-acc-num')"
                     aria-label="Copy Account Number"
-                    
                   >
-                    <i class="fas fa-copy mtc-custom-60" ></i>
+                    <i class="fas fa-copy mtc-custom-60"></i>
                   </button>
                 </div>
               </div>
 
               <!-- Account Name -->
-              <div
-                class="account-detail mtc-custom-55"
-                
-              >
-                <p
-                   class="mtc-custom-56"
-                >
-                  Account Name
-                </p>
-                <div
-                   class="mtc-custom-57"
-                >
-                  <span
-                     class="mtc-custom-61"
-                    >Maths & Tech Club</span
-                  >
+              <div class="account-detail mtc-custom-55">
+                <p class="mtc-custom-56">Account Name</p>
+                <div class="mtc-custom-57">
+                  <span class="mtc-custom-61">Maths & Tech Club</span>
                 </div>
               </div>
             </div>
@@ -458,13 +354,11 @@
       </section>
 
       <!-- Map Section -->
-      <section  class="mtc-custom-62">
-        <div
-           class="mtc-custom-63"
-        >
+      <section class="mtc-custom-62">
+        <div class="mtc-custom-63">
           <!-- Placeholder for Google Maps -->
-          <div  class="mtc-custom-64">
-            <div  class="mtc-custom-7">🗺️</div>
+          <div class="mtc-custom-64">
+            <div class="mtc-custom-7">🗺️</div>
             <h3>Our Location</h3>
             <p>KSSS, Sereconda, KMC, The Gambi</p>
           </div>
