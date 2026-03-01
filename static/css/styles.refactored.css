@@ -1503,6 +1503,42 @@ header {
 }
 
 /* ========================================
+   RESPONSIVE DESIGN - LARGE DESKTOP (min-width: 1440px)
+   ======================================== */
+@media (min-width: 1440px) {
+  .section,
+  .container {
+    max-width: 1350px;
+  }
+
+  .hero-content {
+    max-width: 1000px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - ULTRA WIDE (min-width: 1920px)
+   ======================================== */
+@media (min-width: 1920px) {
+  .section,
+  .container {
+    max-width: 1600px;
+  }
+
+  .grid {
+    gap: 48px;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .hero-content {
+    max-width: 1200px;
+  }
+}
+
+/* ========================================
    END OF REFACTORED STYLESHEET
    ======================================== */
 
