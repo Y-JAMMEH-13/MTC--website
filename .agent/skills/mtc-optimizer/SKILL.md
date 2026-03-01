@@ -7,7 +7,16 @@ version: "5.0-Uncompressed-Verified"
 # MISSION
 
 Refactor the mtc-website to a world-class production-ready state.
-**CRITICAL:** You must strictly adhere to the "Visual Freeze" rule: The site must look 100% identical to commit 54a0e64 with 0% computed style drift.
+**CRITICAL:** You must strictly adhere to the "Visual Freeze" rule: The site must look 100% identical to the Optimized Production Baseline (Commit 249730c7650bf720dc7ec802fcf6c0ed1a6e4fa1) with 0% computed style drift.
+
+## 0. BASELINE EVOLUTION (HISTORICAL CONTEXT)
+
+- **Legacy Baseline (Commit 54a0e64):** The starting point for the refactor.
+- **Optimized Baseline (Commit 249730c):** The new source of truth. Includes:
+  - Fix for the dual-scrollbar bug.
+  - Removal of all 139+ inline HTML styles into CSS utility classes.
+  - Aggressive mobile/tablet whitespace optimizations (Batch 9 & 10).
+  - Migration of Google Fonts to self-hosting and performance hardening.
 
 # 1. CODE OPTIMIZATION SPECIFICATIONS
 
@@ -78,9 +87,9 @@ Refactor the mtc-website to a world-class production-ready state.
 - **Manual is Banned:** You must not rely on human eyes.
 - **Automated Script:** Create a script named `visual-diff-checker.js` using Puppeteer.
 - **Logic:**
-  1. Spin up a local server for the Golden Commit 54a0e64.
-  2. Spin up a local server for the current Refactor.
-  3. Compare `window.getComputedStyle()` for all elements in `body`, `header`, `nav`, `main`, and `footer`.
+  1. Spin up a local server for the Golden Optimized Baseline (Commit 249730c).
+  2. Spin up a local server for any future development.
+  3. Compare `window.getComputedStyle()` for all elements in `body`, `header`, `nav`, `main`, and `footer` at a Desktop viewport (1280x800).
   4. **Fail the build** if any computed CSS value differs (0% tolerance).
 - **Broken Link Check:** Scan all `<a>` tags; fail if any return a 404.
 

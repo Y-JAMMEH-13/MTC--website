@@ -11,7 +11,7 @@
  *
  * WHAT IT DOES:
  *   1. Opens each page on the local dev server (default: http://localhost:3000)
- *   2. Compares computed styles for key structural elements vs a baseline snapshot
+ *   2. Compares computed styles for key structural elements vs the Optimized Baseline (Commit 249730c)
  *   3. Scans all <a href> links for 404s
  *   4. Fails with a detailed diff report if any style or link check fails
  */
@@ -113,8 +113,10 @@ async function collectLinks(page) {
   const page = await browser.newPage();
   await page.setViewport({ width: 1280, height: 800 });
 
-  // ── Step 1: Capture baseline styles from first page load ──────────────────
-  console.log("\n📸 Capturing baseline styles...");
+  // ── Step 1: Capture baseline styles from the Optimized Production Baseline ──
+  console.log(
+    "\n📸 Capturing baseline styles (Optimized Baseline: 249730c)...",
+  );
   await page.goto(`${BASE_URL}/index.html`, { waitUntil: "networkidle2" });
   const baselineStyles = await getComputedStyles(page, SELECTORS, STYLE_KEYS);
   console.log(
