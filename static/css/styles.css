@@ -3,7 +3,7 @@
    ======================================== */
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
 
 /* ========================================
    CSS Variables - Design System
@@ -29,20 +29,20 @@
   --accent-red-light: rgba(254, 56, 7, 0.08);
   --accent-green-light: rgba(21, 137, 22, 0.08);
 
-  --bg-color: #F9FAFB;
+  --bg-color: #f9fafb;
   /* Very Light Cool Gray (SaaS standard) */
-  --card-bg: #FFFFFF;
+  --card-bg: #ffffff;
   /* Pure White cards */
   --dark-text: #111827;
   /* Almost Black */
   --light-text: #2f342f;
   /* Cool Gray text */
-  --border-color: #E5E7EB;
+  --border-color: #e5e7eb;
   /* Light border */
 
   /* Fonts */
-  --font-heading: 'Inter', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
 
   /* Spacing */
   --section-padding: 20px;
@@ -52,9 +52,12 @@
 
   /* Shadows (StriveCloud style) */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-hover:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,7 +73,6 @@ html {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -220,7 +222,7 @@ header {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -315,7 +317,6 @@ header {
     font-size: clamp(0.65rem, 3.2vw, 1.2rem);
   }
 }
-
 
 /* ========================================
    Footer
@@ -454,10 +455,10 @@ header {
   background-color: rgba(139, 26, 28, 0.05) !important;
 }
 
-
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-hover),
+  box-shadow:
+    var(--shadow-hover),
     0 0 0 2px rgba(254, 56, 7, 0.15);
   border-color: rgba(254, 56, 7, 0.2);
 }
@@ -541,7 +542,6 @@ header {
   text-align: center;
 }
 
-
 /* ========================================
    Animated Background
    ======================================== */
@@ -555,14 +555,18 @@ header {
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(249, 250, 251, 1) 100%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(249, 250, 251, 1) 100%
+  );
 }
 
 .floating-symbol {
   position: absolute;
   color: rgba(41, 98, 255, 0.08);
   /* Low opacity var(--secondary) */
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   user-select: none;
   pointer-events: none;
   will-change: transform, opacity;
@@ -664,12 +668,15 @@ header {
   /* Wider */
   max-width: 1400px;
   /* Increased to accommodate longer text and wider feel */
-  transition: box-shadow 0.3s ease, background 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    background 0.3s ease;
 }
 
 /* Subtle red glow on navbar hover */
 .navbar:hover {
-  box-shadow: 0 8px 32px rgba(254, 56, 7, 0.08),
+  box-shadow:
+    0 8px 32px rgba(254, 56, 7, 0.08),
     0 4px 16px rgba(254, 56, 7, 0.05);
 }
 
@@ -686,18 +693,21 @@ header {
   pointer-events: none;
 }
 
-
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.85);
   /* Slightly more solid when scrolled */
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.04);
   /* Pronounced shadow below navbar */
   border-color: rgba(0, 0, 0, 0.05);
   /* Slightly darker border */
 }
 
 .navbar.scroll-up {
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 15px 50px rgba(0, 0, 0, 0.12),
+    0 6px 18px rgba(0, 0, 0, 0.06);
   /* Deeper shadow when scrolling up */
   transform: translateX(-50%) translateY(-2px);
   /* Subtle lift when scrolling up */
@@ -744,7 +754,7 @@ header {
 }
 
 .btn-secondary {
-  border: 2px solid #E0E7FF;
+  border: 2px solid #e0e7ff;
   color: var(--secondary);
   background: transparent;
 }
@@ -757,14 +767,18 @@ header {
 }
 
 .hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 70%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   z-index: -1;
   pointer-events: none;
 }
@@ -827,12 +841,12 @@ header {
 }
 
 .badge-ongoing {
-  background-color: #E8F5E9;
+  background-color: #e8f5e9;
   color: var(--accent-green);
 }
 
 .badge-upcoming {
-  background-color: #FFF3E0;
+  background-color: #fff3e0;
   color: var(--accent-orange);
 }
 
@@ -854,7 +868,7 @@ header {
 .form-textarea {
   width: 100%;
   padding: 0.875rem 1rem;
-  border: 2px solid #E0E0E0;
+  border: 2px solid #e0e0e0;
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
   font-size: 1rem;
@@ -895,7 +909,9 @@ header {
 .scroll-reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .scroll-reveal.revealed {
@@ -907,7 +923,9 @@ header {
 .scroll-reveal-item {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .scroll-reveal-item.revealed {
@@ -1420,14 +1438,12 @@ header {
   }
 }
 
-
-
-
-
 /* --- DONATION SECTION STYLING (Premium) --- */
 
 .donation-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .donation-card:hover {
@@ -1452,7 +1468,7 @@ header {
     gap: 1.5rem;
   }
 
-  .donation-card>div {
+  .donation-card > div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1491,7 +1507,9 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .toast.show {
