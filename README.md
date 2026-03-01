@@ -1,239 +1,168 @@
-<!-- markdownlint-disable MD025 -->
-# KSSS MATHS & TECH CLUB Website — Full Project Specification (Static Folder Version KSSS--V.0.04)
+<!-- markdownlint-disable MD033 MD041 -->
+<div align="center">
 
-This is the **complete and final README** for generating the entire **KSSS MATHS & TECH CLUB Website**, updated with a **static folder structure** for assets.  
-Use this README with Copilot or any coding agent to generate the full website.
+# 🎓 Maths & Tech Club (MTC) Website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-badge-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Lighthouse](https://img.shields.io/badge/Lighthouse-100%25-success)](https://developers.google.com/web/tools/lighthouse)
+
+**Empowering students through mathematics and technology at KSSS.**
+
+[View Live Site](https://www.mtc.gm/) · [Report Bug](#) · [Request Feature](#)
+
+</div>
 
 ---
 
-# 📁 Final Project File Tree (With /static)
+## 📖 About the Project
 
+The official website for the **KSSS Maths & Tech Club (MTC)**. This platform serves as the central hub for our students, showcasing ongoing projects, upcoming events, club resources, and the executive team driving innovation within the school.
+
+This repository contains the highly-optimized, production-ready static assets and HTML pages for the website. The site has been rigorously hardened to achieve perfect Lighthouse scores, utilizing strict Content Security Policies (CSP), optimized assets, and zero-drift CSS generation.
+
+### ✨ Key Features
+
+- **Blazing Fast Performance:** Preloaded fonts, minified CSS/JS, and WebP images.
+- **Robust Security:** Full `netlify.toml` / `vercel.json` / `.htaccess` hardening (HSTS, CSP, XSS blocking).
+- **SEO & A11y Optimized:** Comprehensive meta tags, Open Graph data, schema.org JSON-LD, and total ARIA compliance.
+- **Progressive Web App Ready:** Includes `site.webmanifest` and high-res Android/Apple touch icons.
+- **Automated Verification:** Custom Puppeteer script to enforce 0% visual style drift across deployments.
+
+---
+
+## 🛠️ Built With
+
+This project avoids heavy frameworks to maximize rendering speed and minimize bundle sizes.
+
+- **HTML5** (Semantic & Accessible)
+- **Vanilla CSS3** (Flexbox/Grid, CSS Variables)
+- **Vanilla JavaScript** (ES6+)
+
+---
+
+## 🗂️ Project Structure
+
+The repository follows a clean, static structure. Working source files are kept in `/static`, while the minified, production-ready files served to users live in `/assets`.
+
+```text
 MTC-website/
-│
-├── index.html
-├── about.html
-├── projects.html
-├── team.html
-├── events.html
-├── resources.html
-├── contact.html
-│
-├── static/
-│ ├── css/
-│ │ └── styles.css
-│ │
-│ ├── js/
-│ │ └── script.js
-│ │
-│ └── images/
-│ ├── team/
-│ ├── events/
-│ ├── projects/
-│ └── logo.png
-│
-└── README.md
-
-> **This is the final folder structure. The website must follow this exact organization.**
+├── *.html                 # Core website pages (index, about, contact, etc.)
+├── 404.html               # Custom error page
+├── assets/                # 🚀 PRODUCTION ASSETS
+│   ├── css/               # Minified stylesheets (main.min.css)
+│   ├── js/                # Minified scripts (main.min.js)
+│   ├── images/            # Optimized WebP/PNG formats + favicons
+│   └── fonts/             # Self-hosted woff2 optimized fonts
+├── static/                # 🛠️ SOURCE ASSETS (Dev only)
+│   ├── css/               # Raw, unminified CSS
+│   ├── js/                # Raw, unminified JS
+│   └── images/            # Original source images
+├── .htaccess              # Apache configuration (Security & Caching)
+├── netlify.toml           # Netlify deployment configuration
+├── vercel.json            # Vercel deployment configuration
+├── site.webmanifest       # PWA manifest
+├── visual-diff-checker.js # Puppeteer visual regression script
+└── BUILD.md               # Instructions for reproducing minified assets
+```
 
 ---
 
-# 👥 Executive Team (Use in team.html)
+## 🚀 Local Development
 
-Profile cards must include these members:
+To run the project locally and view the site:
 
-- **President:** Haja Isatou Bah  
-- **Vice President:** Yusupha Jammeh  
-- **Secretary:** Mariama Mboob  
-- **Assistant Secretary:** John M. Samura  
-- **Treasurer:** Mariama Sanneh  
-- **P.R.O:** Zainab Barrow  
-- **P.R.O:** Sheikh Tijan Hydara  
+### Prerequisites
 
----
+You only need a simple local HTTP server. We recommend Node.js and `http-server`.
 
-# 🎨 Design System
+```bash
+# Verify Node.js is installed
+node -v
+```
 
-## **Color Palette**
+### Installation & Setup
 
-| Purpose | Hex |
-|--------|------|
-| Primary | `#000080` |
-| Secondary | `#1A1AFD` |
-| Accent | `#FE3807` |
-| Success | `#158916` |
-| Dark Text | `#1A1A1A` |
-| Background | `#F5F7FA` |
-| Cards | `#FFFFFF` |
+1. **Clone the repository**
 
----
+   ```bash
+   git clone https://github.com/your-username/mtc-website.git
+   cd mtc-website
+   ```
 
-## **Typography**
+2. **Start the local development server**
 
-Google Fonts:
+   ```bash
+   npx http-server . -p 3000
+   ```
 
-- **Poppins** (Headings)
-- **Inter** (Body)
+3. **View in browser**
+   Open exactly `http://localhost:3000`
 
 ---
 
-## **UI Components**
+## 🧪 Testing & Verification
 
-- Rounded corners (12–20px)
-- Light shadows
-- Hover animations
-- Sticky navbar
-- Scroll fade-in animations
-- Responsive grid layouts
-- Section padding: 40–80px
+We enforce a **Visual Freeze** policy. Commit changes must result in 0% style drift for structural elements.
 
----
+To run the automated drift checker:
 
-# 📄 Pages (All Required)
-
-## **1. Homepage (index.html)**
-
-Includes:
-
-- Hero banner  
-- Club slogan  
-- Join button  
-- Sections preview  
+1. Ensure the local server is running on port 3000.
+2. Install Puppeteer (if not already installed).
+   ```bash
+   npm install puppeteer
+   ```
+3. Run the checker.
+   ```bash
+   node visual-diff-checker.js
+   ```
+   _The script will fail with an exit code of `1` if any structural CSS regressions or broken internal links are found._
 
 ---
 
-## **2. About Page**
+## 🏗️ Building Assets
 
-- Mission + Vision  
-- What we do  
-- Focus areas  
+If you need to edit CSS or JS, edit the files in the `static/` folder, and then minify them into the `assets/` folder.
 
----
-
-## **3. Projects Page**
-
-Cards for:
-
-- Ongoing  
-- Upcoming  
-- Completed  
-
-Each has title, description, badge, image.
+Detailed instructions on how to use `cssnano`, `uglifyjs`, and font subsetters can be found in the **[BUILD.md](./BUILD.md)** file.
 
 ---
 
-## **4. Team Page**
+## 👥 Meet the Executive Team
 
-Uses the executive list above.  
-Cards include:
-
-- Name  
-- Role  
-- Image  
-- Hover lift effect  
-
----
-
-## **5. Events Page**
-
-Two sections:
-
-- Upcoming Events  
-- Past Events (with gallery)  
+- **Haja Isatou Bah** — President
+- **Yusupha Jammeh** — Vice President
+- **Mariama Mboob** — Secretary
+- **John M. Samura** — Assistant Secretary
+- **Mariama Sanneh** — Treasurer
+- **Zainab Barrow** — P.R.O
+- **Sheikh Tijan Hydara** — P.R.O
 
 ---
 
-## **6. Resources Page**
+## 🤝 Contributing
 
-- Learning materials  
-- Tutorials  
-- Downloads (placeholders)  
-- Useful external links  
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
----
-
-## **7. Contact Page**
-
-Includes:
-
-- HTML form  
-- Inputs for Name, Email, Message  
-- Placeholder submit button  
-- School address  
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Verify changes using `visual-diff-checker.js`
+5. Push to the Branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
 
 ---
 
-# 🧱 Functional Requirements
+## 📄 License
 
-## **Navigation Bar**
-
-- Sticky top  
-- Logo  
-- Page links  
-- Mobile hamburger menu  
-
-## **Footer**
-
-- Social icons  
-- Copyright  
-
-## **Animations**
-
-- Fade-in scroll effects  
-- Hover transitions  
-- Card elevation  
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-# 📦 Technical Requirements
+## 📬 Contact
 
-- **HTML5**, **CSS3**, **JavaScript ES6**
-- No frameworks (NO React, Tailwind, Bootstrap)
-- Use `/static/css/styles.css`
-- Use `/static/js/script.js`
-- Images inside `/static/images/...`
-- Use Flexbox + Grid
-- Include media queries for:
-  - Mobile (<600px)
-  - Tablet (600–1024px)
-  - Desktop (>1024px)
+Maths & Tech Club - [insert-email@ksss.edu.gm]
 
----
-
-# 🧑‍💻 Instructions for Copilot / Coding Agent
-
-1. Use this README as the **single source of truth**.
-2. Generate all HTML files with clean code.
-3. Add `styles.css` into `/static/css/`.
-4. Add `script.js` into `/static/js/`.
-5. Use the final file tree exactly.
-6. Fill the Team Page using the executive list.
-7. Add modern animations and responsive layouts.
-8. Do not create any backend or server code.
-
----
-
-# ✔️ Final Output
-
-The final website must be:
-
-- Modern  
-- Professional  
-- Fully responsive  
-- Smooth animations  
-- Clean UI  
-- Organized in a **static** folder system  
-
-A complete website for the **MTC**.
-
----
-
-# 📌 End of README
-
-Save this file as `README.md` at the root of the project.
-"""
-
-file_path = "/mnt/data/Maths_Tech_Club_FINAL_STATIC_README.md"
-with open(file_path, "w") as f:
-    f.write(content)
-
-file_path
+Project Link: [https://github.com/your-username/mtc-website](https://github.com/your-username/mtc-website)

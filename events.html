@@ -4,26 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MTC Events - Join our workshops, competitions, and community gatherings">
+    <meta name="description" content="Stay updated with upcoming workshops, competitions, and seminars.">
     <meta name="keywords" content="Contact, MTC, Maths & Tech Club, Get in Touch, Inquiries, Partnerships">
     <meta name="author" content="KSSS, MTC">
-    <meta property="og:title" content="Contact - KSSS, MTC">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Events - MTC">
     <meta property="og:description" content="MTC Events - Join our workshops, competitions, and community gatherings">
     <meta property="og:image" content="static/images/events-og-image.png">
     <meta property="og:url" content="https://www.mtc.gm/events.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="icon" href="static/images/MTC_LOGO.png">
-    <title>Events - KMTC</title>
-    <link rel="stylesheet" href="static/css/styles.refactored.css">
+
+    <meta name="robots" content="index, follow">
+    <title>Events - MTC</title>
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="assets/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" as="font" type="font/woff2" crossorigin>
+
+    <script type="application/ld+json">
+    [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.mtc.gm/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Events",
+        "item": "https://www.mtc.gm/events.html"
+      }
+    ]
+  }
+]
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo"><a href="index.html">
-                        <img src="static/images/MTC_LOGO.png" alt="Logo">
+                        <picture> <source srcset="assets/images/MTC_LOGO.webp" type="image/webp"> <img src="static/images/MTC_LOGO.png" fetchpriority="high" alt="KSSS MTC Logo"> </picture>
                         <span class="nav-logo">KSSS, MTC</span>
                     </a>
                 </div>
@@ -38,7 +72,7 @@
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <a href="contact.html" class="btn btn-primary nav-cta">Join the Club</a>
-                    <button class="hamburger" id="hamburger">
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -48,7 +82,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <main>
             <header class="hero-section">
                 <div class="hero-content fade-in-up">
@@ -272,7 +306,7 @@
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-content">
-                    <div class="footer-logo"><img src="static/images/MTC_LOGO.png" class="logo-img" alt="Logo"></div>
+                    <div class="footer-logo"><picture> <source srcset="assets/images/MTC_LOGO.webp" type="image/webp"> <img src="static/images/MTC_LOGO.png" loading="lazy" class="logo-img" alt="Logo"> </picture></div>
                     <div class="social-icons">
                         <a href="#" class="social-icon" aria-label="Facebook">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
@@ -300,7 +334,7 @@
             </div>
         </footer>
 
-        <script src="static/js/script.js"></script>
+        <script src="assets/js/main.min.js" defer></script>
 </body>
 
 </html>

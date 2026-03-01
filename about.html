@@ -1,268 +1,444 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about the mission, vision, and history of the Maths & Tech Club."
+    />
+    <meta name="robots" content="index, follow">
+    <title>About Us - MTC</title>
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="preload"
+      href="assets/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about the Maths & Tech Club - our mission, vision, and what we do">
-    <title>About - KSSS, MTC</title>
-    <link rel="stylesheet" href="static/css/styles.refactored.css">
-</head>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About Us - MTC" />
+    <meta
+      property="og:description"
+      content="Learn about the mission, vision, and history of the Maths & Tech Club."
+    />
+    <meta
+      property="og:image"
+      content="https://www.mtc.gm/assets/images/index-og-image.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Us - MTC" />
+    <meta
+      name="twitter:description"
+      content="Learn about the mission, vision, and history of the Maths & Tech Club."
+    />
 
-<body>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.mtc.gm/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://www.mtc.gm/about.html"
+            }
+          ]
+        }
+      ]
+    </script>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
     <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo"><a href="index.html">
-                        <img src="static/images/MTC_LOGO.png" height="50px" width="50px" alt="Logo">
-                        <span class="nav-logo">KSSS, MTC</span>
-                    </a>
-                </div>
-                <div class="nav-links">
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="about.html" class="nav-link active">About</a></li>
-                        <li><a href="projects.html" class="nav-link">Projects</a></li>
-                        <li><a href="team.html" class="nav-link">Team</a></li>
-                        <li><a href="events.html" class="nav-link">Events</a></li>
-                        <li><a href="resources.html" class="nav-link">Resources</a></li>
-                        <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary nav-cta">Join the Club</a>
-                    <button class="hamburger" id="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/MTC_LOGO.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="static/images/MTC_LOGO.png"
+                  fetchpriority="high"
+                  height="50"
+                  width="50"
+                  alt="KSSS MTC Logo"
+                />
+              </picture>
+              <span class="nav-logo">KSSS, MTC</span>
+            </a>
+          </div>
+          <div class="nav-links">
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link active">About</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
+              <li><a href="team.html" class="nav-link">Team</a></li>
+              <li><a href="events.html" class="nav-link">Events</a></li>
+              <li><a href="resources.html" class="nav-link">Resources</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary nav-cta"
+              >Join the Club</a
+            >
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main>
-        <header class="hero-section">
-            <div class="hero-content fade-in-up">
-                <span class="hero-badge" style="margin-bottom: 1.5rem;">About Us</span>
-                <h1 class="hero-title">About MTC</h1>
-                <p class="hero-subtitle">
-                    We are a community of students passionate about exploring the intersection of mathematics and
-                    technology.
+    <main id="main-content">
+      <header class="hero-section">
+        <div class="hero-content fade-in-up">
+          <span class="hero-badge" style="margin-bottom: 1.5rem">About Us</span>
+          <h1 class="hero-title">About MTC</h1>
+          <p class="hero-subtitle">
+            We are a community of students passionate about exploring the
+            intersection of mathematics and technology.
+          </p>
+        </div>
+      </header>
+
+      <!-- Mission & Vision Section -->
+      <section class="section scroll-reveal">
+        <div class="grid grid-2">
+          <div class="card card-accent-green">
+            <h2
+              style="
+                color: var(--accent-green);
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+              "
+            >
+              <span style="font-size: 2rem">🎯</span> Our Mission
+            </h2>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.8;
+                color: var(--light-text);
+              "
+            >
+              To create an inclusive community where students can explore,
+              learn, and excel in mathematics and technology. We aim to foster
+              critical thinking, problem-solving skills, and innovation through
+              collaborative learning and hands-on projects.
+            </p>
+          </div>
+          <div class="card card-accent-red">
+            <h2
+              style="
+                color: var(--accent-red);
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+              "
+            >
+              <span style="font-size: 2rem">🔭</span> Our Vision
+            </h2>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.8;
+                color: var(--light-text);
+              "
+            >
+              To be the leading student organization that bridges the gap
+              between theoretical knowledge and practical application,
+              empowering the next generation of mathematicians, engineers, and
+              technologists to solve real-world challenges.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Do Section -->
+      <div style="background-color: white; width: 100%">
+        <section class="section scroll-reveal">
+          <h2 class="section-title">What We Do</h2>
+          <div class="grid grid-3">
+            <div class="card text-center card-accent-primary">
+              <div style="font-size: 3rem; margin-bottom: 1rem">📚</div>
+              <h3 class="card-title">Learning & Development</h3>
+              <p class="card-description">
+                We organize workshops, tutorials, and study sessions covering
+                advanced mathematics, programming languages, algorithms, and
+                emerging technologies.
+              </p>
+            </div>
+            <div class="card text-center card-accent-secondary">
+              <div style="font-size: 3rem; margin-bottom: 1rem">🏆</div>
+              <h3 class="card-title">Competitions</h3>
+              <p class="card-description">
+                We prepare students for mathematics olympiads, coding
+                competitions, and hackathons. Our members regularly participate
+                in national and international competitions.
+              </p>
+            </div>
+            <div class="card text-center card-accent-green">
+              <div style="font-size: 3rem; margin-bottom: 1rem">🤝</div>
+              <h3 class="card-title">Networking</h3>
+              <p class="card-description">
+                We facilitate peer-to-peer learning, group projects, and
+                networking opportunities. Members connect with like-minded
+                individuals and industry professionals.
+              </p>
+            </div>
+            <div class="card text-center card-accent-red">
+              <div style="font-size: 3rem; margin-bottom: 1rem">💡</div>
+              <h3 class="card-title">Innovation Projects</h3>
+              <p class="card-description">
+                We encourage members to work on innovative projects that apply
+                mathematical and technological concepts to solve real-world
+                problems.
+              </p>
+            </div>
+            <div class="card text-center card-accent-thick-red">
+              <div style="font-size: 3rem; margin-bottom: 1rem">🎤</div>
+              <h3 class="card-title">Guest Speakers</h3>
+              <p class="card-description">
+                We host talks from industry experts, researchers, and successful
+                alumni who share their experiences and insights, inspiring
+                members to pursue excellence.
+              </p>
+            </div>
+            <div class="card text-center card-accent-secondary">
+              <div style="font-size: 3rem; margin-bottom: 1rem">🌐</div>
+              <h3 class="card-title">Community Outreach</h3>
+              <p class="card-description">
+                We engage with the broader community through tutoring programs,
+                STEM awareness campaigns, and initiatives that promote
+                mathematics and technology education.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Focus Areas Section -->
+      <section class="section scroll-reveal">
+        <h2 class="section-title">Our Focus Areas</h2>
+        <div class="grid grid-2">
+          <div class="card card-accent-primary">
+            <h3 style="color: var(--primary); margin-bottom: 1rem">
+              Mathematics
+            </h3>
+            <ul class="resource-list">
+              <li class="resource-item">
+                <strong>Pure Mathematics:</strong> Algebra, Calculus, Number
+                Theory, Geometry
+              </li>
+              <li class="resource-item">
+                <strong>Applied Mathematics:</strong> Statistics, Probability,
+                Mathematical Modeling
+              </li>
+              <li class="resource-item">
+                <strong>Computational Mathematics:</strong> Numerical Analysis,
+                Optimization
+              </li>
+              <li class="resource-item" style="border-bottom: none">
+                <strong>Competition Math:</strong> Olympiad preparation,
+                Problem-solving strategies
+              </li>
+            </ul>
+          </div>
+          <div class="card card-accent-secondary">
+            <h3 style="color: var(--secondary); margin-bottom: 1rem">
+              Technology
+            </h3>
+            <ul class="resource-list">
+              <li class="resource-item">
+                <strong>Programming:</strong> Python, JavaScript, C++, Java
+              </li>
+              <li class="resource-item">
+                <strong>Web Development:</strong> HTML, CSS, React, Node.js
+              </li>
+              <li class="resource-item">
+                <strong>Data Science & AI:</strong> Machine Learning, Data
+                Analysis, Neural Networks
+              </li>
+              <li class="resource-item" style="border-bottom: none">
+                <strong>Emerging Tech:</strong> Blockchain, IoT, Robotics,
+                Quantum Computing
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Join Section -->
+      <div style="width: 100%">
+        <section class="section scroll-reveal text-center">
+          <div
+            style="
+              background: white;
+              padding: 4rem 2rem;
+              border-radius: var(--radius-lg);
+              box-shadow: var(--shadow-md);
+            "
+          >
+            <h2 class="section-title" style="margin-bottom: 3rem">
+              Why Join MTC?
+            </h2>
+            <div class="grid grid-3">
+              <div class="text-center">
+                <div style="font-size: 3rem; margin-bottom: 1rem">🚀</div>
+                <h4 style="margin-bottom: 0.5rem">Accelerate Your Learning</h4>
+                <p style="color: var(--light-text); font-size: 0.95rem">
+                  Access exclusive resources, workshops, and mentorship to
+                  fast-track your skills in math and tech.
                 </p>
+              </div>
+              <div class="text-center">
+                <div style="font-size: 3rem; margin-bottom: 1rem">👥</div>
+                <h4 style="margin-bottom: 0.5rem">Build Your Network</h4>
+                <p style="color: var(--light-text); font-size: 0.95rem">
+                  Connect with passionate peers, industry professionals, and
+                  alumni who share your interests.
+                </p>
+              </div>
+              <div class="text-center">
+                <div style="font-size: 3rem; margin-bottom: 1rem">🏅</div>
+                <h4 style="margin-bottom: 0.5rem">Achieve Excellence</h4>
+                <p style="color: var(--light-text); font-size: 0.95rem">
+                  Participate in competitions, build impressive projects, and
+                  stand out in your academic journey.
+                </p>
+              </div>
             </div>
-        </header>
-
-        <!-- Mission & Vision Section -->
-        <section class="section scroll-reveal">
-            <div class="grid grid-2">
-                <div class="card card-accent-green">
-                    <h2
-                        style="color: var(--accent-green); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="font-size: 2rem;">🎯</span> Our Mission
-                    </h2>
-                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--light-text);">
-                        To create an inclusive community where students can explore, learn, and excel in mathematics and
-                        technology.
-                        We aim to foster critical thinking, problem-solving skills, and innovation through collaborative
-                        learning
-                        and hands-on projects.
-                    </p>
-                </div>
-                <div class="card card-accent-red">
-                    <h2
-                        style="color: var(--accent-red); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="font-size: 2rem;">🔭</span> Our Vision
-                    </h2>
-                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--light-text);">
-                        To be the leading student organization that bridges the gap between theoretical knowledge and
-                        practical
-                        application, empowering the next generation of mathematicians, engineers, and technologists to
-                        solve
-                        real-world challenges.
-                    </p>
-                </div>
+            <div class="text-center mt-4" style="margin-top: 3rem">
+              <a href="contact.html" class="btn btn-primary">Join Us Today</a>
             </div>
+          </div>
         </section>
-
-        <!-- What We Do Section -->
-        <div style="background-color: white; width: 100%;">
-            <section class="section scroll-reveal">
-                <h2 class="section-title">What We Do</h2>
-                <div class="grid grid-3">
-                    <div class="card text-center card-accent-primary">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
-                        <h3 class="card-title">Learning & Development</h3>
-                        <p class="card-description">
-                            We organize workshops, tutorials, and study sessions covering advanced mathematics,
-                            programming languages, algorithms, and emerging technologies.
-                        </p>
-                    </div>
-                    <div class="card text-center card-accent-secondary">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
-                        <h3 class="card-title">Competitions</h3>
-                        <p class="card-description">
-                            We prepare students for mathematics olympiads, coding competitions, and hackathons. Our
-                            members regularly participate in national and international competitions.
-                        </p>
-                    </div>
-                    <div class="card text-center card-accent-green">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
-                        <h3 class="card-title">Networking</h3>
-                        <p class="card-description">
-                            We facilitate peer-to-peer learning, group projects, and networking opportunities. Members
-                            connect with like-minded individuals and industry professionals.
-                        </p>
-                    </div>
-                    <div class="card text-center card-accent-red">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">💡</div>
-                        <h3 class="card-title">Innovation Projects</h3>
-                        <p class="card-description">
-                            We encourage members to work on innovative projects that apply mathematical and
-                            technological concepts to solve real-world problems.
-                        </p>
-                    </div>
-                    <div class="card text-center card-accent-thick-red">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">🎤</div>
-                        <h3 class="card-title">Guest Speakers</h3>
-                        <p class="card-description">
-                            We host talks from industry experts, researchers, and successful alumni who share their
-                            experiences and insights, inspiring members to pursue excellence.
-                        </p>
-                    </div>
-                    <div class="card text-center card-accent-secondary">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">🌐</div>
-                        <h3 class="card-title">Community Outreach</h3>
-                        <p class="card-description">
-                            We engage with the broader community through tutoring programs, STEM awareness campaigns,
-                            and initiatives that promote mathematics and technology education.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-
-        <!-- Focus Areas Section -->
-        <section class="section scroll-reveal">
-            <h2 class="section-title">Our Focus Areas</h2>
-            <div class="grid grid-2">
-                <div class="card card-accent-primary">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Mathematics</h3>
-                    <ul class="resource-list">
-                        <li class="resource-item">
-                            <strong>Pure Mathematics:</strong> Algebra, Calculus, Number Theory, Geometry
-                        </li>
-                        <li class="resource-item">
-                            <strong>Applied Mathematics:</strong> Statistics, Probability, Mathematical Modeling
-                        </li>
-                        <li class="resource-item">
-                            <strong>Computational Mathematics:</strong> Numerical Analysis, Optimization
-                        </li>
-                        <li class="resource-item" style="border-bottom: none;">
-                            <strong>Competition Math:</strong> Olympiad preparation, Problem-solving strategies
-                        </li>
-                    </ul>
-                </div>
-                <div class="card card-accent-secondary">
-                    <h3 style="color: var(--secondary); margin-bottom: 1rem;">Technology</h3>
-                    <ul class="resource-list">
-                        <li class="resource-item">
-                            <strong>Programming:</strong> Python, JavaScript, C++, Java
-                        </li>
-                        <li class="resource-item">
-                            <strong>Web Development:</strong> HTML, CSS, React, Node.js
-                        </li>
-                        <li class="resource-item">
-                            <strong>Data Science & AI:</strong> Machine Learning, Data Analysis, Neural Networks
-                        </li>
-                        <li class="resource-item" style="border-bottom: none;">
-                            <strong>Emerging Tech:</strong> Blockchain, IoT, Robotics, Quantum Computing
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Join Section -->
-        <div style="width: 100%;">
-            <section class="section scroll-reveal text-center">
-                <div
-                    style="background: white; padding: 4rem 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-                    <h2 class="section-title" style="margin-bottom: 3rem;">Why Join MTC?</h2>
-                    <div class="grid grid-3">
-                        <div class="text-center">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
-                            <h4 style="margin-bottom: 0.5rem;">Accelerate Your Learning</h4>
-                            <p style="color: var(--light-text); font-size: 0.95rem;">
-                                Access exclusive resources, workshops, and mentorship to fast-track your skills in math
-                                and
-                                tech.
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">👥</div>
-                            <h4 style="margin-bottom: 0.5rem;">Build Your Network</h4>
-                            <p style="color: var(--light-text); font-size: 0.95rem;">
-                                Connect with passionate peers, industry professionals, and alumni who share your
-                                interests.
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🏅</div>
-                            <h4 style="margin-bottom: 0.5rem;">Achieve Excellence</h4>
-                            <p style="color: var(--light-text); font-size: 0.95rem;">
-                                Participate in competitions, build impressive projects, and stand out in your academic
-                                journey.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="text-center mt-4" style="margin-top: 3rem;">
-                        <a href="contact.html" class="btn btn-primary">Join Us Today</a>
-                    </div>
-                </div>
-            </section>
-        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-logo"><img src="static/images/MTC_LOGO.png" class="logo-img" alt="Logo"></div>
-                <div class="social-icons">
-                    <a href="#" class="social-icon" aria-label="Facebook">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Twitter">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Instagram">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Maths & Tech Club. All rights reserved.</p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <picture>
+              <source srcset="assets/images/MTC_LOGO.webp" type="image/webp" />
+              <img
+                src="static/images/MTC_LOGO.png"
+                loading="lazy"
+                class="logo-img"
+                alt="Logo"
+              />
+            </picture>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maths & Tech Club. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
-    <script src="static/js/script.js"></script>
-</body>
-
+    <script src="assets/js/main.min.js" defer></script>
+  </body>
 </html>

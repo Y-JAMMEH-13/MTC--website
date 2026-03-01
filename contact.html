@@ -1,301 +1,760 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact MTC - Get in touch with us for inquiries, partnerships, or to join the club"
+    />
+    <meta
+      name="keywords"
+      content="Contact, MTC, Maths & Tech Club, Get in Touch, Inquiries, Partnerships"
+    />
+    <meta name="author" content="KSSS, MTC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact - MTC" />
+    <meta
+      property="og:description"
+      content="Contact MTC - Get in touch with us for inquiries, partnerships, or to join the club"
+    />
+    <meta property="og:image" content="static/images/contact-og-image.png" />
+    <meta property="og:url" content="https://www.mtc.gm/contact.html" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Contact MTC - Get in touch with us for inquiries, partnerships, or to join the club">
-    <meta name="keywords" content="Contact, MTC, Maths & Tech Club, Get in Touch, Inquiries, Partnerships">
-    <meta name="author" content="KSSS, MTC">
-    <meta property="og:title" content="Contact - KSSS, MTC">
-    <meta property="og:description" content="Contact MTC - Get in touch with us for inquiries, partnerships, or to join the club">
-    <meta property="og:image" content="static/images/contact-og-image.png">
-    <meta property="og:url" content="https://www.mtc.gm/contact.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="icon" href="static/images/MTC_LOGO.png">
-    <title>Contact - KSSS, MTC</title>
-    <link rel="stylesheet" href="static/css/styles.refactored.css">
+    <meta name="robots" content="index, follow">
+    <title>Contact - MTC</title>
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="preload"
+      href="assets/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-<body>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.mtc.gm/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact",
+              "item": "https://www.mtc.gm/contact.html"
+            }
+          ]
+        }
+      ]
+    </script>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
     <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo"><a href="index.html">
-                        <img src="static/images/MTC_LOGO.png" alt="Logo">
-                        <span class="nav-logo">KSSS, MTC</span>
-                    </a>
-                </div>
-                <div class="nav-links">
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="about.html" class="nav-link">About</a></li>
-                        <li><a href="projects.html" class="nav-link">Projects</a></li>
-                        <li><a href="team.html" class="nav-link">Team</a></li>
-                        <li><a href="events.html" class="nav-link">Events</a></li>
-                        <li><a href="resources.html" class="nav-link">Resources</a></li>
-                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary nav-cta">Join the Club</a>
-                    <button class="hamburger" id="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/MTC_LOGO.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="static/images/MTC_LOGO.png"
+                  fetchpriority="high"
+                  alt="KSSS MTC Logo"
+                />
+              </picture>
+              <span class="nav-logo">KSSS, MTC</span>
+            </a>
+          </div>
+          <div class="nav-links">
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
+              <li><a href="team.html" class="nav-link">Team</a></li>
+              <li><a href="events.html" class="nav-link">Events</a></li>
+              <li><a href="resources.html" class="nav-link">Resources</a></li>
+              <li>
+                <a href="contact.html" class="nav-link active">Contact</a>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary nav-cta"
+              >Join the Club</a
+            >
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main>
-        <header class="hero-section">
-            <div class="hero-content fade-in-up">
-                <span class="hero-badge" style="margin-bottom: 1.5rem;">Get in Touch</span>
-                <h1 class="hero-title">Contact Us</h1>
-                <p class="hero-subtitle">
-                    Have a question, suggestion, or want to join? We'd love to hear from you. Reach out to us anytime.
-                </p>
-            </div>
-        </header>
+    <main id="main-content">
+      <header class="hero-section">
+        <div class="hero-content fade-in-up">
+          <span class="hero-badge" style="margin-bottom: 1.5rem"
+            >Get in Touch</span
+          >
+          <h1 class="hero-title">Contact Us</h1>
+          <p class="hero-subtitle">
+            Have a question, suggestion, or want to join? We'd love to hear from
+            you. Reach out to us anytime.
+          </p>
+        </div>
+      </header>
 
-        <!-- Contact Information Section -->
-        <section class="section scroll-reveal">
-            <div class="grid grid-2">
-                <div class="contact-info">
-                    <h2 class="section-title"
-                        style="text-align: left; margin-bottom: 2rem; font-size: 2rem; color: var(--dark-text);">Get in
-                        Touch</h2>
-                    <p style="margin-bottom: 2rem; color: var(--light-text); font-size: 1.1rem; line-height: 1.6;">
-                        Have questions or suggestions? We're here to help. Reach out to us through any of the following
-                        channels.
-                    </p>
+      <!-- Contact Information Section -->
+      <section class="section scroll-reveal">
+        <div class="grid grid-2">
+          <div class="contact-info">
+            <h2
+              class="section-title"
+              style="
+                text-align: left;
+                margin-bottom: 2rem;
+                font-size: 2rem;
+                color: var(--dark-text);
+              "
+            >
+              Get in Touch
+            </h2>
+            <p
+              style="
+                margin-bottom: 2rem;
+                color: var(--light-text);
+                font-size: 1.1rem;
+                line-height: 1.6;
+              "
+            >
+              Have questions or suggestions? We're here to help. Reach out to us
+              through any of the following channels.
+            </p>
 
-                    <div class="info-item" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div
-                            style="width: 50px; height: 50px; background: rgba(42, 77, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.2rem;">
-                            📞
-                        </div>
-                        <div>
-                            <h4 style="margin-bottom: 0.25rem;">Phone</h4>
-                            <p style="color: var(--light-text);">+220 ### ####</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div
-                            style="width: 50px; height: 50px; background: rgba(0, 212, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-size: 1.2rem;">
-                            ✉️
-                        </div>
-                        <div>
-                            <h4 style="margin-bottom: 0.25rem;">Email</h4>
-                            <p style="color: var(--light-text);">info@mtc.gm</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item" style="display: flex; gap: 1rem; margin-bottom: 2rem;">
-                        <div
-                            style="width: 50px; height: 50px; background: rgba(106, 0, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 1.2rem;">
-                            📍
-                        </div>
-                        <div>
-                            <h4 style="margin-bottom: 0.25rem;">Address</h4>
-                            <p style="color: var(--light-text);">KSSS, Sereconda, KMC, The Gambia</p>
-                        </div>
-                    </div>
-
-                    <h3 style="margin-bottom: 1rem;">Follow Us</h3>
-                    <div class="social-links" style="display: flex; gap: 1rem;">
-                        <a href="#" class="social-icon"
-                            style="width: 40px; height: 40px; background: #f0f0f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark-text); transition: all 0.3s ease;">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon"
-                            style="width: 40px; height: 40px; background: #f0f0f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark-text); transition: all 0.3s ease;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon"
-                            style="width: 40px; height: 40px; background: #f0f0f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark-text); transition: all 0.3s ease;">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form-container card" style="padding: 2rem;">
-                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Send us a Message</h3>
-                    <form id="contactForm">
-                        <div style="margin-bottom: 1rem;">
-                            <label for="name"
-                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
-                            <input type="text" id="name" required
-                                style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 1rem;">
-                        </div>
-                        <div style="margin-bottom: 1rem;">
-                            <label for="email"
-                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
-                            <input type="email" id="email" required
-                                style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 1rem;">
-                        </div>
-                        <div style="margin-bottom: 1rem;">
-                            <label for="subject"
-                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Subject</label>
-                            <select id="subject"
-                                style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; background-color: white; font-size: 1rem;">
-                                <option value="general">General Inquiry</option>
-                                <option value="join">Join the Club</option>
-                                <option value="project">Project Proposal</option>
-                                <option value="partnership">Partnership</option>
-                            </select>
-                        </div>
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="message"
-                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
-                            <textarea id="message" rows="5" required
-                                style="width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; resize: vertical; font-size: 1rem;"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Donation Section with New UI -->
-        <section id="donation-details" class="section scroll-reveal"
-            style="background-color: var(--bg-color); padding: 4rem 2rem;">
-            <div class="container" style="max-width: 800px; margin: 0 auto;">
-                <h2 class="section-title">Support Our Mission</h2>
-                <p class="text-center"
-                    style="margin-bottom: 3rem; color: var(--light-text); font-size: 1.1rem; line-height: 1.6;">
-                    Your generous contributions help us organize events, fund student projects, and provide free
-                    educational resources to the community.
-                </p>
-
-                <!-- Wave Donation Card -->
-                <div class="card wave-card"
-                    style="background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%); padding: 2.5rem; margin-bottom: 2rem; color: white; display: flex; align-items: center; justify-content: space-between; border: none; overflow: hidden; position: relative;">
-                    <!-- Decorative Circle -->
-                    <div
-                        style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(255, 255, 255, 0.1); border-radius: 50%;">
-                    </div>
-
-                    <div style="flex: 1; z-index: 1;">
-                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
-                            <i class="fas fa-mobile-alt" style="font-size: 1.5rem;"></i>
-                            <h3 style="margin: 0; font-size: 1.5rem; color: white;">Wave / Mobile Money</h3>
-                        </div>
-                        <p style="opacity: 0.9; margin-bottom: 0;">Quick and easy transfer</p>
-                    </div>
-
-                    <div style="z-index: 1; display: flex; align-items: center; gap: 1rem;">
-                        <span id="wave-number" style="font-size: 1.8rem; font-weight: 700; letter-spacing: 1px;">+220
-                            ###
-                            ####</span>
-                        <button class="copy-btn" onclick="copyToClipboard('wave-number')" aria-label="Copy Wave Number"
-                            style="background: rgba(255, 255, 255, 0.2); border: none; width: 45px; height: 45px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                            <i class="fas fa-copy" style="color: white; font-size: 1.2rem;"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Bank Transfer Card -->
-                <div class="card bank-card" style="padding: 2.5rem;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
-                        <div
-                            style="width: 50px; height: 50px; background: #f0f4ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                            <i class="fas fa-university" style="font-size: 1.5rem;"></i>
-                        </div>
-                        <div>
-                            <h3 style="margin: 0; color: var(--dark-text); font-size: 1.25rem;">Bank Transfer</h3>
-                            <p style="color: var(--light-text); margin: 0; font-size: 0.9rem;">Guaranty Trust Bank
-                                (GTBank)</p>
-                        </div>
-                    </div>
-
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                        <!-- Account Number -->
-                        <div class="account-detail"
-                            style="background: var(--bg-color); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color);">
-                            <p style="color: var(--light-text); font-size: 0.85rem; margin-bottom: 0.25rem;">Account
-                                Number</p>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span id="bank-acc-num"
-                                    style="font-size: 1.2rem; font-weight: 600; color: var(--dark-text);">202-###-###-###</span>
-                                <button class="copy-small-btn" onclick="copyToClipboard('bank-acc-num')"
-                                    aria-label="Copy Account Number"
-                                    style="background: transparent; border: none; cursor: pointer; opacity: 0.6; transition: opacity 0.3s ease;">
-                                    <i class="fas fa-copy" style="color: var(--primary);"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Account Name -->
-                        <div class="account-detail"
-                            style="background: var(--bg-color); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color);">
-                            <p style="color: var(--light-text); font-size: 0.85rem; margin-bottom: 0.25rem;">Account
-                                Name</p>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span style="font-size: 1.1rem; font-weight: 600; color: var(--dark-text);">Maths & Tech
-                                    Club</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Map Section -->
-        <section style="height: 400px; width: 100%; position: relative;">
             <div
-                style="width: 100%; height: 100%; background: #eee; display: flex; align-items: center; justify-content: center; color: #666;">
-                <!-- Placeholder for Google Maps -->
-                <div style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
-                    <h3>Our Location</h3>
-                    <p>KSSS, Sereconda, KMC, The Gambi</p>
-                </div>
+              class="info-item"
+              style="display: flex; gap: 1rem; margin-bottom: 1.5rem"
+            >
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: rgba(42, 77, 255, 0.1);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--primary);
+                  font-size: 1.2rem;
+                "
+              >
+                📞
+              </div>
+              <div>
+                <h4 style="margin-bottom: 0.25rem">Phone</h4>
+                <p style="color: var(--light-text)">+220 ### ####</p>
+              </div>
             </div>
-            <!-- Interactive Map iframe would go here -->
-        </section>
+
+            <div
+              class="info-item"
+              style="display: flex; gap: 1rem; margin-bottom: 1.5rem"
+            >
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: rgba(0, 212, 255, 0.1);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--secondary);
+                  font-size: 1.2rem;
+                "
+              >
+                ✉️
+              </div>
+              <div>
+                <h4 style="margin-bottom: 0.25rem">Email</h4>
+                <p style="color: var(--light-text)">info@mtc.gm</p>
+              </div>
+            </div>
+
+            <div
+              class="info-item"
+              style="display: flex; gap: 1rem; margin-bottom: 2rem"
+            >
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: rgba(106, 0, 255, 0.1);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--accent);
+                  font-size: 1.2rem;
+                "
+              >
+                📍
+              </div>
+              <div>
+                <h4 style="margin-bottom: 0.25rem">Address</h4>
+                <p style="color: var(--light-text)">
+                  KSSS, Sereconda, KMC, The Gambia
+                </p>
+              </div>
+            </div>
+
+            <h3 style="margin-bottom: 1rem">Follow Us</h3>
+            <div class="social-links" style="display: flex; gap: 1rem">
+              <a
+                href="#"
+                class="social-icon"
+                aria-label="Social Media Link"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background: #f0f0f0;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--dark-text);
+                  transition: all 0.3s ease;
+                "
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon"
+                aria-label="Social Media Link"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background: #f0f0f0;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--dark-text);
+                  transition: all 0.3s ease;
+                "
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon"
+                aria-label="Social Media Link"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background: #f0f0f0;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--dark-text);
+                  transition: all 0.3s ease;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-container card" style="padding: 2rem">
+            <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem">
+              Send us a Message
+            </h3>
+            <form id="contactForm">
+              <div style="margin-bottom: 1rem">
+                <label
+                  for="name"
+                  style="
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-weight: 500;
+                  "
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 0.8rem;
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    font-family: inherit;
+                    font-size: 1rem;
+                  "
+                />
+              </div>
+              <div style="margin-bottom: 1rem">
+                <label
+                  for="email"
+                  style="
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-weight: 500;
+                  "
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 0.8rem;
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    font-family: inherit;
+                    font-size: 1rem;
+                  "
+                />
+              </div>
+              <div style="margin-bottom: 1rem">
+                <label
+                  for="subject"
+                  style="
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-weight: 500;
+                  "
+                  >Subject</label
+                >
+                <select
+                  id="subject"
+                  style="
+                    width: 100%;
+                    padding: 0.8rem;
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    font-family: inherit;
+                    background-color: white;
+                    font-size: 1rem;
+                  "
+                >
+                  <option value="general">General Inquiry</option>
+                  <option value="join">Join the Club</option>
+                  <option value="project">Project Proposal</option>
+                  <option value="partnership">Partnership</option>
+                </select>
+              </div>
+              <div style="margin-bottom: 1.5rem">
+                <label
+                  for="message"
+                  style="
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-weight: 500;
+                  "
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 0.8rem;
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    font-family: inherit;
+                    resize: vertical;
+                    font-size: 1rem;
+                  "
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donation Section with New UI -->
+      <section
+        id="donation-details"
+        class="section scroll-reveal"
+        style="background-color: var(--bg-color); padding: 4rem 2rem"
+      >
+        <div class="container" style="max-width: 800px; margin: 0 auto">
+          <h2 class="section-title">Support Our Mission</h2>
+          <p
+            class="text-center"
+            style="
+              margin-bottom: 3rem;
+              color: var(--light-text);
+              font-size: 1.1rem;
+              line-height: 1.6;
+            "
+          >
+            Your generous contributions help us organize events, fund student
+            projects, and provide free educational resources to the community.
+          </p>
+
+          <!-- Wave Donation Card -->
+          <div
+            class="card wave-card"
+            style="
+              background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+              padding: 2.5rem;
+              margin-bottom: 2rem;
+              color: white;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border: none;
+              overflow: hidden;
+              position: relative;
+            "
+          >
+            <!-- Decorative Circle -->
+            <div
+              style="
+                position: absolute;
+                top: -50px;
+                right: -50px;
+                width: 150px;
+                height: 150px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 50%;
+              "
+            ></div>
+
+            <div style="flex: 1; z-index: 1">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 1rem;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                <i class="fas fa-mobile-alt" style="font-size: 1.5rem"></i>
+                <h3 style="margin: 0; font-size: 1.5rem; color: white">
+                  Wave / Mobile Money
+                </h3>
+              </div>
+              <p style="opacity: 0.9; margin-bottom: 0">
+                Quick and easy transfer
+              </p>
+            </div>
+
+            <div
+              style="z-index: 1; display: flex; align-items: center; gap: 1rem"
+            >
+              <span
+                id="wave-number"
+                style="font-size: 1.8rem; font-weight: 700; letter-spacing: 1px"
+                >+220 ### ####</span
+              >
+              <button
+                class="copy-btn"
+                onclick="copyToClipboard('wave-number')"
+                aria-label="Copy Wave Number"
+                style="
+                  background: rgba(255, 255, 255, 0.2);
+                  border: none;
+                  width: 45px;
+                  height: 45px;
+                  border-radius: 12px;
+                  cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transition: all 0.3s ease;
+                "
+              >
+                <i
+                  class="fas fa-copy"
+                  style="color: white; font-size: 1.2rem"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bank Transfer Card -->
+          <div class="card bank-card" style="padding: 2.5rem">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 2rem;
+              "
+            >
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: #f0f4ff;
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--primary);
+                "
+              >
+                <i class="fas fa-university" style="font-size: 1.5rem"></i>
+              </div>
+              <div>
+                <h3
+                  style="margin: 0; color: var(--dark-text); font-size: 1.25rem"
+                >
+                  Bank Transfer
+                </h3>
+                <p
+                  style="color: var(--light-text); margin: 0; font-size: 0.9rem"
+                >
+                  Guaranty Trust Bank (GTBank)
+                </p>
+              </div>
+            </div>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+              "
+            >
+              <!-- Account Number -->
+              <div
+                class="account-detail"
+                style="
+                  background: var(--bg-color);
+                  padding: 1rem;
+                  border-radius: 12px;
+                  border: 1px solid var(--border-color);
+                "
+              >
+                <p
+                  style="
+                    color: var(--light-text);
+                    font-size: 0.85rem;
+                    margin-bottom: 0.25rem;
+                  "
+                >
+                  Account Number
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    id="bank-acc-num"
+                    style="
+                      font-size: 1.2rem;
+                      font-weight: 600;
+                      color: var(--dark-text);
+                    "
+                    >202-###-###-###</span
+                  >
+                  <button
+                    class="copy-small-btn"
+                    onclick="copyToClipboard('bank-acc-num')"
+                    aria-label="Copy Account Number"
+                    style="
+                      background: transparent;
+                      border: none;
+                      cursor: pointer;
+                      opacity: 0.6;
+                      transition: opacity 0.3s ease;
+                    "
+                  >
+                    <i class="fas fa-copy" style="color: var(--primary)"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Account Name -->
+              <div
+                class="account-detail"
+                style="
+                  background: var(--bg-color);
+                  padding: 1rem;
+                  border-radius: 12px;
+                  border: 1px solid var(--border-color);
+                "
+              >
+                <p
+                  style="
+                    color: var(--light-text);
+                    font-size: 0.85rem;
+                    margin-bottom: 0.25rem;
+                  "
+                >
+                  Account Name
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      color: var(--dark-text);
+                    "
+                    >Maths & Tech Club</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section style="height: 400px; width: 100%; position: relative">
+        <div
+          style="
+            width: 100%;
+            height: 100%;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+          "
+        >
+          <!-- Placeholder for Google Maps -->
+          <div style="text-align: center">
+            <div style="font-size: 3rem; margin-bottom: 1rem">🗺️</div>
+            <h3>Our Location</h3>
+            <p>KSSS, Sereconda, KMC, The Gambi</p>
+          </div>
+        </div>
+        <!-- Interactive Map iframe would go here -->
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-logo"><img src="static/images/MTC_LOGO.png" class="logo-img" alt="Logo"></div>
-                <div class="social-icons">
-                    <a href="#" class="social-icon" aria-label="Facebook">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Twitter">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Instagram">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Maths & Tech Club. All rights reserved.</p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <picture>
+              <source srcset="assets/images/MTC_LOGO.webp" type="image/webp" />
+              <img
+                src="static/images/MTC_LOGO.png"
+                loading="lazy"
+                class="logo-img"
+                alt="Logo"
+              />
+            </picture>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maths & Tech Club. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
-    <script src="static/js/script.js"></script>
-    <script src="static/js/donation.js"></script>
-</body>
-
+    <script src="assets/js/main.min.js" defer></script>
+  </body>
 </html>

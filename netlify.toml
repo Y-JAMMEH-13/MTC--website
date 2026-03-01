@@ -1,0 +1,42 @@
+# =============================================================
+# MTC Website — Netlify Deployment Configuration
+# =============================================================
+
+[build]
+  publish = "."
+
+# --- Custom 404 page ---
+[[redirects]]
+  from   = "/*"
+  to     = "/404.html"
+  status = 404
+
+# --- Long-lived cache for versioned assets ---
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# --- Short cache for HTML pages ---
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# --- Web App Manifest ---
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# --- Security headers for all pages ---
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options   = "nosniff"
+    X-Frame-Options          = "DENY"
+    X-XSS-Protection         = "1; mode=block"
+    Referrer-Policy          = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Permissions-Policy       = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy  = "default-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; script-src 'self'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; form-action 'self'; report-uri /csp-report"

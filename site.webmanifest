@@ -1,0 +1,21 @@
+{
+  "name": "Maths & Tech Club - KSSS",
+  "short_name": "MTC",
+  "description": "Empowering students through mathematics and technology at KSSS.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#000080",
+  "icons": [
+    {
+      "src": "assets/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
