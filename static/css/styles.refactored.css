@@ -203,15 +203,19 @@ header {
 
 /* Scrolled state - more solid appearance */
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow:
     0 10px 40px rgba(0, 0, 0, 0.08),
     0 4px 12px rgba(0, 0, 0, 0.04);
-  border-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(255, 255, 255, 0.5); /* frosted edge */
 }
 
 /* Scroll-up state - enhanced shadow */
 .navbar.scroll-up {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow:
     0 15px 50px rgba(0, 0, 0, 0.12),
     0 6px 18px rgba(0, 0, 0, 0.06);
@@ -634,15 +638,18 @@ header {
    CARDS
    ======================================== */
 .card {
-  background: var(--card-bg);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: var(--radius-md);
   padding: 2.5rem;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(255, 255, 255, 0.5); /* frosted edge */
   transition: var(--transition-normal);
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04); /* soft glass shadow */
 }
 
 .card:hover {
@@ -1721,53 +1728,104 @@ header {
   gap: 1rem;
 }
 .mtc-custom-28 {
-  width: 40px;
-  height: 40px;
-  background: #f0f0f0;
-  border-radius: 50%;
-  display: flex;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px; /* Standardizing on 8px */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   color: var(--dark-text);
-  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+/* Native Thick Blue Hover */
+.mtc-custom-28:hover {
+  background: var(--secondary);
+  color: white;
+  border-color: var(--secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .mtc-custom-29 {
-  padding: 2rem;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition:
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
+
+/* Native Card Physics Hover */
+.mtc-custom-29:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 .mtc-custom-30 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: var(--primary);
 }
+
 .mtc-custom-31 {
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  transition: color var(--transition-normal);
 }
-.mtc-custom-32 {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  font-family: inherit;
-  font-size: 1rem;
+
+/* Native Focus Label Shift */
+.mtc-custom-26:focus-within .mtc-custom-31 {
+  color: var(--secondary);
 }
-.mtc-custom-33 {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  font-family: inherit;
-  background-color: white;
-  font-size: 1rem;
+
+/* Native Staggered Reveal using existing fadeInUp */
+.contact-form-container .mtc-custom-26 {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }
+
+.contact-form-container .mtc-custom-26:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.contact-form-container .mtc-custom-26:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.contact-form-container .mtc-custom-26:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.contact-form-container .mtc-custom-26:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.mtc-custom-32,
+.mtc-custom-33,
 .mtc-custom-34 {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.8rem 1rem;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   font-family: inherit;
-  resize: vertical;
   font-size: 1rem;
+  background: white;
+  transition: all var(--transition-normal);
+}
+
+.mtc-custom-34 {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Native Thick Blue Focus State */
+.mtc-custom-32:focus,
+.mtc-custom-33:focus,
+.mtc-custom-34:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(42, 77, 255, 0.1); /* Standard site glow */
 }
 .mtc-custom-35 {
   background-color: var(--bg-color);
